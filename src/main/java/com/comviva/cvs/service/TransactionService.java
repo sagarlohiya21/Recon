@@ -9,10 +9,15 @@ import java.net.URL;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import com.comviva.cvs.dao.TransactionDao;
+import com.comviva.cvs.entity.ReversalRequest;
 import com.comviva.cvs.entity.ReversalResponse;
+import com.comviva.cvs.entity.StatusCheckRequest;
 import com.comviva.cvs.entity.StatusCheckResponse;
 import com.comviva.cvs.entity.Transaction;
 import com.fasterxml.jackson.xml.XmlMapper;
@@ -56,7 +61,6 @@ public class TransactionService {
 			DataOutputStream out = null;
 			BufferedReader in = null;
 			try {
-				url = new URL("http://localhost:8090/statusCheck");
 				con = (HttpURLConnection) url.openConnection();
 				con.setRequestMethod("POST");
 				con.setDoOutput(true);
@@ -137,8 +141,7 @@ public class TransactionService {
 				}
 				XmlMapper xmlMapper = new XmlMapper();
 				response = xmlMapper.readValue(responseString.toString(), ReversalResponse.class);
-				
-				
+
 				System.out.println("in reversal" + responseString);
 				System.out.println("response obj" + response.toString());
 
