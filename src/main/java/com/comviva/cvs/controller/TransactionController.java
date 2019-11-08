@@ -45,7 +45,8 @@ public class TransactionController {
 	}
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/test")
-	public void testWorking() {
+	public void testWorking() throws Exception {
+		System.out.println("SERHFKJNHSDJK");
 		List<Transaction> transactions = ts.getAllTransactions();
 		System.out.println("SUccess");
 		ts.statusCheckSuccess(transactions.get(0));
