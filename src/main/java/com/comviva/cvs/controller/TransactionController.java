@@ -43,5 +43,12 @@ public class TransactionController {
 	public List<Transaction> getTransaction(String date) {
 		return ts.getFailedTransactions(date);
 	}
+	
+	@RequestMapping(method = RequestMethod.GET, value = "/test")
+	public void testWorking() {
+		List<Transaction> transactions = ts.getAllTransactions();
+		System.out.println("SUccess");
+		ts.statusCheckSuccess(transactions.get(0));
+	}
 
 }

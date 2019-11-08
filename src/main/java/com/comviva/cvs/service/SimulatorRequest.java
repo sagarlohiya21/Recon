@@ -1,6 +1,7 @@
 package com.comviva.cvs.service;
 
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -24,37 +25,55 @@ public class SimulatorRequest {
 
 	ReversalRequest reversalRequest = new ReversalRequest("dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy",
 			"dummy", "dummy", "dummy", "dummy", "dummy", "dummy");
-	
+
 	RestTemplate restTemplate = new RestTemplate();
-	HttpHeaders headers = new HttpHeaders();
-	headers.setContentType(MediaType.APPLICATION_XML);
+	HttpHeaders headers = createHttpHeaders();
+
+	private HttpHeaders createHttpHeaders() {
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_XML);
+		return headers;
+	}
 
 	public StatusCheckResponse sendStatusCheckRequestSuccess(Transaction transaction) {
 		String url = "http://localhost:8090/successStatus";
-		
-		ResponseEntity<StatusCheckResponse> response = restTemplate.postForEntity(url, statusCheckRequest, StatusCheckResponse.class);
-		return response.getBody();
+
+//		ResponseEntity<StatusCheckResponse> response = restTemplate.postForEntity(url, statusCheckRequest,
+//				StatusCheckResponse.class);
+
+		String response = restTemplate.postForObject(url, statusCheckRequest, String.class);
+		return null;
 	}
-	
+
+	public void sendStatusCheckRequestString() {
+		String url = "http://localhost:8090/successStatus";
+
+		String response = restTemplate.postForObject(url, statusCheckRequest, String.class);
+		System.out.println(response);
+	}
+
 	public StatusCheckResponse sendStatusCheckRequestFail(Transaction transaction) {
 		String url = "http://localhost:8090/failedStatus";
-		
-		ResponseEntity<StatusCheckResponse> response = restTemplate.postForEntity(url, statusCheckRequest, StatusCheckResponse.class);
+
+		ResponseEntity<StatusCheckResponse> response = restTemplate.postForEntity(url, statusCheckRequest,
+				StatusCheckResponse.class);
 		return response.getBody();
 	}
-	
+
 	public ReversalResponse sendReversalRequestSuccess(Transaction transaction) {
 		String url = "http://localhost:8090/successReversal";
-	
-		ResponseEntity<ReversalResponse> response = restTemplate.postForEntity(url, reversalRequest, ReversalResponse.class);
+
+		ResponseEntity<ReversalResponse> response = restTemplate.postForEntity(url, reversalRequest,
+				ReversalResponse.class);
 		return response.getBody();
 	}
-	
+
 	public ReversalResponse sendReversalRequestFail(Transaction transaction) {
 		String url = "http://localhost:8090/failedReversal";
-	
-		ResponseEntity<ReversalResponse> response = restTemplate.postForEntity(url, reversalRequest, ReversalResponse.class);
+
+		ResponseEntity<ReversalResponse> response = restTemplate.postForEntity(url, reversalRequest,
+				ReversalResponse.class);
 		return response.getBody();
 	}
-	
+
 }

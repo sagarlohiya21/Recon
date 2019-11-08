@@ -27,6 +27,9 @@ public class TransactionService {
 	@Autowired
 	TransactionDao dao;
 
+	@Autowired
+	SimulatorRequest simReq;
+
 	public List<Transaction> getAllTransactions() {
 		return dao.findAllTransaction();
 	}
@@ -49,6 +52,12 @@ public class TransactionService {
 
 	public void updateFaceValue(Transaction transaction, int count) {
 		dao.updateDBFaceValue(transaction, count);
+	}
+
+	public void statusCheckSuccess(Transaction transaction) {
+		simReq.sendStatusCheckRequestString();
+//		System.out.println(response.getMessage());
+		System.out.println("Success");
 	}
 
 	public void sendStatusCheckRequest(List<Transaction> transactionList) throws Exception {
