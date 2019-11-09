@@ -93,14 +93,14 @@ public class SimulatorRequest {
 		// then call reversal
 		// if transaction status in response is failure, that is money is not debited,
 		// then update status code in the database
-		if (response.getTxnStatus().equals("200")) {
-			System.out.println("calling reversal");
-			reversalResponse = sendReversalRequestSuccess(requestTransaction);
-		}
-
-		if (reversalResponse.getTxnStatus().contentEquals("200")) {
-			sendReversalRequestSuccess(requestTransaction);
-		}
+//		if (response.getTxnStatus().equals("200")) {
+//			System.out.println("calling reversal");
+//			reversalResponse = sendReversalRequestSuccess(requestTransaction);
+//		}
+//
+//		if (reversalResponse.getTxnStatus().contentEquals("200")) {
+//			sendReversalRequestSuccess(requestTransaction);
+//		}
 
 		out.flush();
 		out.close();
@@ -150,9 +150,9 @@ public class SimulatorRequest {
 
 	public StatusCheckResponse sendStatusCheckRequestSuccess(Transaction transaction) throws Exception {
 		String urlString = "http://localhost:8090/successStatus";
-		
+
 		URL url = new URL(urlString);
-		
+
 		return receiveStatusCheckResponse(url, transaction);
 	}
 
