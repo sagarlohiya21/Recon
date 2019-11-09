@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.comviva.cvs.entity.Transaction;
+import com.comviva.cvs.service.RequestService;
 import com.comviva.cvs.service.Test;
 import com.comviva.cvs.service.TransactionService;
 
@@ -17,9 +18,9 @@ public class TransactionController {
 
 	@Autowired
 	TransactionService ts;
-
+	
 	@Autowired
-	Test lol;
+	RequestService rs;
 
 	@CrossOrigin
 	@RequestMapping(method = RequestMethod.GET, value = "/getAllFailedTransactions")
@@ -51,8 +52,14 @@ public class TransactionController {
 	@RequestMapping(method = RequestMethod.GET, value = "/test")
 	public void testWorking() throws Exception {
 		List<Transaction> transactions = ts.getAllTransactions();
-		System.out.println("SUccess");
-		lol.testSuccessStatus();
+		Transaction t = transactions.get(0);
+		
+		
+		rs.sendStatusCheckRequestSuccess(t);
+		rs.sendStatusCheckRequestFail(t);
+		rs.sendReversalRequestSuccess(t);
+		rs.sendReversalRequestFail(t);
+		System.out.println("FUCK ");
 	}
 
 }
