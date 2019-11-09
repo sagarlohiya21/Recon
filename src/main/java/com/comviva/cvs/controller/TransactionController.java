@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.comviva.cvs.entity.Transaction;
 import com.comviva.cvs.service.RequestService;
-import com.comviva.cvs.service.Test;
 import com.comviva.cvs.service.TransactionService;
 
 @RestController
@@ -18,7 +17,7 @@ public class TransactionController {
 
 	@Autowired
 	TransactionService ts;
-	
+
 	@Autowired
 	RequestService rs;
 
@@ -53,7 +52,8 @@ public class TransactionController {
 	public void testWorking() throws Exception {
 		List<Transaction> transactions = ts.getAllTransactions();
 		Transaction t = transactions.get(0);
-
+		rs.sendStatusCheckRequest(t);
+		rs.sendReversalRequest(t);
 	}
 
 }

@@ -34,6 +34,35 @@ public class RequestService {
 		return header;
 	}
 
+	/**
+	 * 
+	 * @param transaction
+	 * @return Randomized response to the status check request to the Simulator API
+	 *         can either be successful or failed
+	 * @throws Exception
+	 */
+	public StatusCheckResponse sendStatusCheckRequest(Transaction transaction) throws Exception {
+		String urlString = "http://localhost:8090/transactionStatus";
+		ResponseEntity<StatusCheckResponse> response = restTemplate.postForEntity(urlString, this.statusCheckRequest,
+				StatusCheckResponse.class);
+		System.out.println(response.getBody());
+		return response.getBody();
+	}
+
+	/**
+	 * 
+	 * @param transaction
+	 * @return Randomized response to the reversal request to the Simulator API can
+	 *         either be successful or failed
+	 */
+	public ReversalResponse sendReversalRequest(Transaction transaction) {
+		String urlString = "http://localhost:8090/reversal";
+		ResponseEntity<ReversalResponse> response = restTemplate.postForEntity(urlString, this.reversalRequest,
+				ReversalResponse.class);
+		System.out.println(response.getBody());
+		return response.getBody();
+	}
+
 	public StatusCheckResponse sendStatusCheckRequestSuccess(Transaction transaction) throws Exception {
 		String urlString = "http://localhost:8090/successStatus";
 		ResponseEntity<StatusCheckResponse> response = restTemplate.postForEntity(urlString, this.statusCheckRequest,
