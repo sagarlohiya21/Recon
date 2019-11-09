@@ -54,12 +54,6 @@ public class TransactionController {
 		List<Transaction> transactions = ts.getAllTransactions();
 		Transaction t = transactions.get(0);
 		
-		
-		rs.sendStatusCheckRequestSuccess(t);
-		rs.sendStatusCheckRequestFail(t);
-		rs.sendReversalRequestSuccess(t);
-		rs.sendReversalRequestFail(t);
-		System.out.println("FUCK ");
 	}
 
 }
