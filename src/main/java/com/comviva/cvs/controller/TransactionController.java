@@ -53,7 +53,7 @@ public class TransactionController {
 	public void testWorking() throws Exception {
 		List<Transaction> transactions = ts.getAllTransactions();
 		Transaction t = transactions.get(0);
-		
+
 	}
 
 }
