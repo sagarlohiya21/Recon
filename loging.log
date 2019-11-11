@@ -1,0 +1,242 @@
+2019-11-11 09:50:46.500 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 3928 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-11 09:50:46.643 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
+2019-11-11 09:50:47.577 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 09:50:47.608 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-11-11 09:50:47.984 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 09:50:51.411 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-11 09:50:51.532 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-11 09:50:51.534 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-11 09:50:52.643 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-11 09:50:52.644 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5920 ms
+2019-11-11 09:50:57.612 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-11 09:51:00.436 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-11 09:51:07.303 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-11 09:51:11.133 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-11 09:51:18.917 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-11 09:51:20.200 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2019-11-11 09:51:44.088 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-11 09:51:44.194 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 09:51:45.207 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 09:51:46.288 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-11 09:51:49.011 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-11 09:51:49.020 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 63.189 seconds (JVM running for 63.88)
+2019-11-11 10:04:30.382 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 5884 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-11 10:04:30.400 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
+2019-11-11 10:04:31.103 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 10:04:31.127 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-11 10:04:31.538 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:04:34.767 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-11 10:04:34.934 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-11 10:04:34.935 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-11 10:04:35.662 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-11 10:04:35.663 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5197 ms
+2019-11-11 10:04:38.791 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-11 10:04:41.507 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-11 10:04:47.143 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-11 10:04:49.412 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-11 10:04:50.837 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-11 10:04:51.521 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2019-11-11 10:05:00.871 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-11 10:05:00.923 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 10:05:01.702 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 10:05:02.490 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-11 10:05:02.986 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-11 10:05:02.989 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 33.358 seconds (JVM running for 34.599)
+2019-11-11 10:06:09.334 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-11 10:06:09.336 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-11 10:06:09.343 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-11-11 10:06:09.828 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:06:09.837 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:06:12.747 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :468219117374977808
+2019-11-11 10:06:12.748 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :468219117374977808
+2019-11-11 10:06:12.748 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :468219117374977808
+2019-11-11 10:06:15.601 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Money is debited for transaction :468219117374977808
+2019-11-11 10:06:15.603 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:06:15.607 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :468219117374977808
+2019-11-11 10:06:15.635 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Money is transfered back to retailer account through Reversal API
+2019-11-11 10:06:15.638 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction status
+2019-11-11 10:06:15.706 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 468219117374977808 is updated successfully
+2019-11-11 10:06:16.392 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction face value
+2019-11-11 10:06:16.393 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 468219117374977808 is updated successfully
+2019-11-11 10:06:16.448 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction Status 
+2019-11-11 10:06:16.450 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 468219117374977808 is updated successfully
+2019-11-11 10:06:16.510 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:06:16.510 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:06:21.501 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:06:21.503 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:06:21.507 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:06:21.507 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:11:01.864 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 8968 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-11 10:11:01.867 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
+2019-11-11 10:11:02.568 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 10:11:02.593 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-11 10:11:02.910 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:11:03.254 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-11 10:11:03.264 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-11 10:11:03.265 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-11 10:11:03.358 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-11 10:11:03.359 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1427 ms
+2019-11-11 10:11:03.546 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-11 10:11:03.615 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-11 10:11:03.807 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-11 10:11:03.909 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-11 10:11:03.972 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-11 10:11:03.995 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2019-11-11 10:11:05.967 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-11 10:11:05.973 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 10:11:06.103 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 10:11:06.242 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-11 10:11:06.490 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-11 10:11:06.494 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 5.027 seconds (JVM running for 5.479)
+2019-11-11 10:11:18.999 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-11 10:11:19.001 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-11 10:11:19.008 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-11-11 10:11:19.090 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:11:19.097 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:11:19.208 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:11:19.209 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:12:26.421 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 10920 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-11 10:12:26.428 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
+2019-11-11 10:12:27.074 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 10:12:27.098 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-11 10:12:27.417 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:12:27.760 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-11 10:12:27.770 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-11 10:12:27.771 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-11 10:12:27.865 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-11 10:12:27.866 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1362 ms
+2019-11-11 10:12:28.045 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-11 10:12:28.113 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-11 10:12:28.315 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-11 10:12:28.409 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-11 10:12:28.473 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-11 10:12:28.496 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2019-11-11 10:12:29.641 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-11 10:12:29.647 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 10:12:29.784 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 10:12:29.936 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-11 10:12:30.163 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-11 10:12:30.166 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.117 seconds (JVM running for 4.604)
+2019-11-11 10:12:36.306 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-11 10:12:36.306 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-11 10:12:36.315 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-11-11 10:12:36.394 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:12:36.403 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:12:36.546 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:12:36.550 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:28:09.204 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:28:09.275 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:28:09.487 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:28:09.489 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:29:47.364 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:29:47.366 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:29:48.133 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :1187177399936859131
+2019-11-11 10:29:48.134 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :1187177399936859131
+2019-11-11 10:29:48.135 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :1187177399936859131
+2019-11-11 10:29:53.004 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is debited for transaction :1187177399936859131
+2019-11-11 10:29:53.006 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:53.007 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :1187177399936859131
+2019-11-11 10:29:53.090 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is transfered back to retailer account through Reversal API
+2019-11-11 10:29:53.091 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction status
+2019-11-11 10:29:53.733 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1187177399936859131 is updated successfully
+2019-11-11 10:29:54.041 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction face value
+2019-11-11 10:29:54.043 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1187177399936859131 is updated successfully
+2019-11-11 10:29:54.073 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction Status 
+2019-11-11 10:29:54.076 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1187177399936859131 is updated successfully
+2019-11-11 10:29:54.198 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :1558521150
+2019-11-11 10:29:54.198 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :1558521150
+2019-11-11 10:29:54.199 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :1558521150
+2019-11-11 10:29:54.246 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is debited for transaction :1558521150
+2019-11-11 10:29:54.249 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:54.249 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :1558521150
+2019-11-11 10:29:54.365 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:54.365 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :1558521150
+2019-11-11 10:29:54.446 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:54.446 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :1558521150
+2019-11-11 10:29:54.552 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is transfered back to retailer account through Reversal API
+2019-11-11 10:29:54.552 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction status
+2019-11-11 10:29:54.556 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521150 is updated successfully
+2019-11-11 10:29:54.706 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction face value
+2019-11-11 10:29:54.708 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521150 is updated successfully
+2019-11-11 10:29:54.757 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction Status 
+2019-11-11 10:29:54.762 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521150 is updated successfully
+2019-11-11 10:29:54.790 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :1558521326
+2019-11-11 10:29:54.790 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :1558521326
+2019-11-11 10:29:54.790 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :1558521326
+2019-11-11 10:29:54.819 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is debited for transaction :1558521326
+2019-11-11 10:29:54.820 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:54.820 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :1558521326
+2019-11-11 10:29:54.832 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is transfered back to retailer account through Reversal API
+2019-11-11 10:29:54.833 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction status
+2019-11-11 10:29:54.835 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521326 is updated successfully
+2019-11-11 10:29:54.864 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction face value
+2019-11-11 10:29:54.867 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521326 is updated successfully
+2019-11-11 10:29:54.906 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction Status 
+2019-11-11 10:29:54.907 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521326 is updated successfully
+2019-11-11 10:29:54.939 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :1558521681
+2019-11-11 10:29:54.940 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :1558521681
+2019-11-11 10:29:54.945 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :1558521681
+2019-11-11 10:29:54.955 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is debited for transaction :1558521681
+2019-11-11 10:29:54.956 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:54.956 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :1558521681
+2019-11-11 10:29:55.004 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is transfered back to retailer account through Reversal API
+2019-11-11 10:29:55.005 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction status
+2019-11-11 10:29:55.008 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521681 is updated successfully
+2019-11-11 10:29:55.038 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction face value
+2019-11-11 10:29:55.040 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521681 is updated successfully
+2019-11-11 10:29:55.074 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction Status 
+2019-11-11 10:29:55.076 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558521681 is updated successfully
+2019-11-11 10:29:55.148 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :1558522380
+2019-11-11 10:29:55.149 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :1558522380
+2019-11-11 10:29:55.149 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :1558522380
+2019-11-11 10:29:55.193 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is debited for transaction :1558522380
+2019-11-11 10:29:55.194 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:55.195 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :1558522380
+2019-11-11 10:29:55.201 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is transfered back to retailer account through Reversal API
+2019-11-11 10:29:55.201 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction status
+2019-11-11 10:29:55.202 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558522380 is updated successfully
+2019-11-11 10:29:55.231 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction face value
+2019-11-11 10:29:55.232 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558522380 is updated successfully
+2019-11-11 10:29:55.281 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction Status 
+2019-11-11 10:29:55.282 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 1558522380 is updated successfully
+2019-11-11 10:29:55.307 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :2916024078559917800
+2019-11-11 10:29:55.307 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :2916024078559917800
+2019-11-11 10:29:55.307 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :2916024078559917800
+2019-11-11 10:29:55.316 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is debited for transaction :2916024078559917800
+2019-11-11 10:29:55.316 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:55.316 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :2916024078559917800
+2019-11-11 10:29:55.387 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:55.387 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :2916024078559917800
+2019-11-11 10:29:55.402 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Calling Reversal API
+2019-11-11 10:29:55.402 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Constructing Reversal request for transaction :2916024078559917800
+2019-11-11 10:29:55.414 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Money is transfered back to retailer account through Reversal API
+2019-11-11 10:29:55.414 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction status
+2019-11-11 10:29:55.415 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 2916024078559917800 is updated successfully
+2019-11-11 10:29:55.447 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction face value
+2019-11-11 10:29:55.448 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 2916024078559917800 is updated successfully
+2019-11-11 10:29:55.489 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Updating transaction Status 
+2019-11-11 10:29:55.490 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Transaction with transaction ID 2916024078559917800 is updated successfully
+2019-11-11 10:29:55.531 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-11 10:29:55.532 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-11 10:33:37.008 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 12700 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-11 10:33:37.011 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
+2019-11-11 10:33:37.703 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 10:33:37.727 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-11 10:33:38.029 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:33:38.775 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-11 10:33:38.786 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-11 10:33:38.786 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-11 10:33:39.457 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-11 10:33:39.457 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2390 ms
+2019-11-11 10:33:39.688 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-11 10:33:39.782 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-11 10:33:40.103 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-11 10:33:40.271 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-11 10:33:40.380 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-11 10:33:40.442 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2019-11-11 10:33:41.624 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-11 10:33:41.631 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 10:33:41.774 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-11 10:33:41.940 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-11 10:33:42.262 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-11 10:33:42.276 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 5.777 seconds (JVM running for 8.655)

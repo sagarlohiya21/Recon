@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.persistence.Query;
 
-import com.comviva.reconciliation.dao.ITransactionDao;
+import com.comviva.reconciliation.dao.TransactionDao;
 import com.comviva.reconciliation.dao.TransactionDaoImpl;
 import com.comviva.reconciliation.utils.Transaction;
 

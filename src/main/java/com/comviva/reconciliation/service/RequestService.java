@@ -1,4 +1,4 @@
-package com.comviva.cvs.service;
+package com.comviva.reconciliation.service;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -6,11 +6,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.comviva.cvs.entity.ReversalRequest;
-import com.comviva.cvs.entity.ReversalResponse;
-import com.comviva.cvs.entity.StatusCheckRequest;
-import com.comviva.cvs.entity.StatusCheckResponse;
-import com.comviva.cvs.entity.Transaction;
+import com.comviva.reconciliation.entity.ReversalRequest;
+import com.comviva.reconciliation.entity.ReversalResponse;
+import com.comviva.reconciliation.entity.StatusCheckRequest;
+import com.comviva.reconciliation.entity.StatusCheckResponse;
+import com.comviva.reconciliation.entity.Transaction;
 
 @Service
 public class RequestService {

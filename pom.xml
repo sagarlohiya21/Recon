@@ -9,7 +9,7 @@
 		<version>2.2.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.comviva.cvs</groupId>
+	<groupId>com.comviva.reconciliation</groupId>
 	<artifactId>reconciliation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>reconciliation</name>
@@ -73,6 +73,7 @@
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
 		</dependency>
+		
 	</dependencies>
 
 	<build>

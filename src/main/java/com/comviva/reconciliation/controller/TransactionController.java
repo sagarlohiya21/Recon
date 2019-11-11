@@ -1,6 +1,4 @@
-package com.comviva.cvs.controller;
-
-import java.util.List;
+package com.comviva.reconciliation.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -8,30 +6,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.comviva.cvs.entity.Transaction;
-import com.comviva.cvs.service.RequestService;
-import com.comviva.cvs.service.TransactionService;
+import com.comviva.reconciliation.service.RequestService;
+import com.comviva.reconciliation.service.TransactionServiceImpl;
 
 @RestController
 public class TransactionController {
 
 	@Autowired
-	TransactionService ts;
+	TransactionServiceImpl ts;
 
 	@Autowired
 	RequestService rs;
 
 	@CrossOrigin
 	@RequestMapping(method = RequestMethod.GET, value = "/getAllFailedTransactions")
-	public List<Transaction> getTransaction() throws Exception {
-		List<Transaction> transactionList = ts.getFailedTransactions();
-
-		ts.sendStatusCheckRequest(transactionList);
-
-		return ts.getFailedTransactions();
+	public void getTransaction() throws Exception {
+		ts.processFailedTransaction();
 	}
 
-	@CrossOrigin
+	/*@CrossOrigin
 	@RequestMapping(method = RequestMethod.GET, value = "/getAllTransactions")
 	public List<Transaction> getAllTransactions() throws Exception {
 
@@ -52,8 +45,6 @@ public class TransactionController {
 	public void testWorking() throws Exception {
 		List<Transaction> transactions = ts.getAllTransactions();
 		Transaction t = transactions.get(0);
-		rs.sendStatusCheckRequest(t);
-		rs.sendReversalRequest(t);
 	}
-
+*/
 }

@@ -1,4 +1,4 @@
-package com.comviva.cvs.entity;
+package com.comviva.reconciliation.entity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,23 +8,25 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * @author Hithesh A Bandodkar
+ *
+ */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class ReversalRequest {
+public class ReversalResponse {
+
 	private String type;
+	private String txnStatus;
 	private String date;
-	private String extnwCode;
-	private String msisdn;
-	private String pin;
-	private String loginId;
-	private String password;
-	private String extCode;
-	private String extrefNum;
-	private String msisdn2;
+	private String extRefNum;
+	private String amount;
+	private String txnDate;
+	private String serviceType;
 	private String txnId;
-	private String language1;
-	private String langugae2;
+	private String message;
 }
+
