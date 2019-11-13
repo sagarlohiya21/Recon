@@ -1,8 +1,13 @@
 package com.comviva.reconciliation.entity;
 
+import java.util.Date;
+
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.comviva.reconciliation.service.TransactionPrimary;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,24 +26,24 @@ import lombok.NoArgsConstructor;
 public class Transaction {
 
 	@Id
-	private String transactionId;
+	@Embedded
+	private TransactionPrimary primaryTransaction;
+	
 	private String campaignName;
-	private String ceTimeTaken;
+	private int ceTimeTaken;
 	private String debugTransactionId;
-	private String e2eTimeTaken;
+	private int e2eTimeTaken;
 	private String faceValue;
 	private String offerCategory;
 	private String offerName;
-	private String offerType;
-	private String pretupsTimeTaken;
-	private String rechargeAmount;
-	private String retailerCommission;
-	private String retailerMsisdn;
-	private String smsTimeTaken;
-	private String startTime;
-	private String subscriberBonus;
+	private int offerType;
+	private int pretupsTimeTaken;
+	private double rechargeAmount;
+	private double retailerCommission;
+	private int smsTimeTaken;
+	private Date startTime;
+	private Date subscriberBonus;
 	private String subscriberMsisdn;
-	private String transactionDate;
-	private String transactionStatus;
-	private String vasTimeTaken;
+	private int transactionStatus;
+	private int vasTimeTaken;
 }

@@ -15,8 +15,8 @@ public interface TransactionService {
 	List<Transaction> getRetailerTransactions(String retailerMsisdn);
 	List<Transaction> getAllTransactions();
 	List<Transaction> getTransactionsByDate(String fromDate, String toDate);
-	void updateTransactionStatus(Transaction transaction,String statusCode);
-	void updateFaceValue(Transaction transaction, String faceValue);
+	void updateTransactionStatus(Transaction transaction);
 	void processFailedTransaction();
+	void updateTransaction(Transaction transaction, String faceValue, String statusCode);
 
 }
