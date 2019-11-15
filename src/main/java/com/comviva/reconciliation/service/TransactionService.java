@@ -9,14 +9,13 @@ import com.comviva.reconciliation.entity.Transaction;
  *
  */
 public interface TransactionService {
-	
-	List<Transaction> getFailedTransactionsByStatus(String transactionStatus);
+
 	List<Transaction> getFailedTransactions();
-	List<Transaction> getRetailerTransactions(String retailerMsisdn);
-	List<Transaction> getAllTransactions();
-	List<Transaction> getTransactionsByDate(String fromDate, String toDate);
+
 	void updateTransactionStatus(Transaction transaction);
+
 	void processFailedTransaction();
-	void updateTransaction(Transaction transaction, String faceValue, String statusCode);
+
+	void updateTransaction(Transaction transaction, String faceValue, int statusCode);
 
 }

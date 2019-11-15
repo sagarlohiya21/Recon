@@ -27,17 +27,6 @@ public class TransactionServiceImpl implements TransactionService {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionServiceImpl.class);
 
-	@Override
-	public List<Transaction> getRetailerTransactions(String retailerMsisdn) {
-		LOGGER.info("Fetching all transactions of retailer with MSISDN " + retailerMsisdn + "");
-		return transactionDao.getRetailerTransactions(retailerMsisdn);
-	}
-
-	@Override
-	public List<Transaction> getFailedTransactionsByStatus(String transactionStatus) {
-		LOGGER.info("Fetching all failed transactions with transaction status " + transactionStatus + "");
-		return transactionDao.getFailedTransactionsByStatus(transactionStatus);
-	}
 
 	@Override
 	public List<Transaction> getFailedTransactions() {
@@ -45,22 +34,10 @@ public class TransactionServiceImpl implements TransactionService {
 		return transactionDao.getFailedTransactions();
 	}
 
-	@Override
-	public List<Transaction> getAllTransactions() {
-		LOGGER.info("Fetching all transactions");
-		return transactionDao.getAllTransactions();
-	}
 
 	@Override
 	@Transactional
-	public List<Transaction> getTransactionsByDate(String fromDate, String toDate) {
-		LOGGER.info("Fetching transactions between " + fromDate + " and " + toDate + "");
-		return transactionDao.getTransactionsByDate(fromDate, toDate);
-	}
-
-	@Override
-	@Transactional
-	public void updateTransaction(Transaction transaction, String faceValue, String statusCode) {
+	public void updateTransaction(Transaction transaction, String faceValue, int statusCode) {
 		transaction.setTransactionStatus(statusCode);
 		transaction.setFaceValue(faceValue);
 		LOGGER.info("Updating transaction status and faceValue");
@@ -92,10 +69,10 @@ public class TransactionServiceImpl implements TransactionService {
 	@Override
 	@Transactional
 	public void updateTransactionStatus(Transaction transaction) {
-		if (transaction.getTransactionStatus().equals("22") || transaction.getTransactionStatus().equals("23"))
-			transaction.setTransactionStatus("29");
-		else if (transaction.getTransactionStatus().equals("25") || transaction.getTransactionStatus().equals("26"))
-			transaction.setTransactionStatus("30");
+		if (transaction.getTransactionStatus() == 22 || transaction.getTransactionStatus() == 23)
+			transaction.setTransactionStatus(29);
+		else if (transaction.getTransactionStatus() == 25 || transaction.getTransactionStatus() == 26)
+			transaction.setTransactionStatus(30);
 		LOGGER.info("Updating transaction Status ");
 		try {
 			transactionDao.updateTransaction(transaction);
@@ -116,7 +93,8 @@ public class TransactionServiceImpl implements TransactionService {
 		try {
 			// iterating through all the transactions
 			for (Transaction failedTransaction : failedTransactions) {
-				LOGGER.info("processing failed transaction :" + failedTransaction.getTransactionId());
+				LOGGER.info("processing failed transaction :"
+						+ failedTransaction.getPrimaryTransaction().getTransactionId());
 				if (requestService.sendStatusCheckRequest(failedTransaction).getTxnStatus().equals("200")) { // calling
 																												// status
 																												// check
@@ -125,7 +103,8 @@ public class TransactionServiceImpl implements TransactionService {
 																												// each
 																												// failed
 																												// transaction
-					LOGGER.info("Money is debited for transaction :" + failedTransaction.getTransactionId());
+					LOGGER.info("Money is debited for transaction :"
+							+ failedTransaction.getPrimaryTransaction().getTransactionId());
 					int attempts = 0;
 					boolean flag;
 					do {
@@ -141,10 +120,11 @@ public class TransactionServiceImpl implements TransactionService {
 					} while (attempts < 7);
 					if (!flag) {
 						System.out.println("maximum reached");
-						updateTransaction(failedTransaction, "" + attempts + "", "21");
+						updateTransaction(failedTransaction, "" + attempts + "", 21);
 					}
 				} else {
-					LOGGER.info("Money is not debited for transaction :" + failedTransaction.getTransactionId());
+					LOGGER.info("Money is not debited for transaction :"
+							+ failedTransaction.getPrimaryTransaction().getTransactionId());
 					updateTransactionStatus(failedTransaction);
 				}
 			}

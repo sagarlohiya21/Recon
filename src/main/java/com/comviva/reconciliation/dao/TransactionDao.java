@@ -9,14 +9,9 @@ import com.comviva.reconciliation.entity.Transaction;
  *
  */
 
-public interface TransactionDao{
-	
-	List<Transaction> getRetailerTransactions(String retailerMsisdn);	
-	List<Transaction> getSubscriberTransactions(String subscriberMsisdn);	
-	List<Transaction> getFailedTransactionsByStatus(String transactionStatus);	
-	List<Transaction> getFailedTransactions();	
-	List<Transaction> getAllTransactions();
-	void updateTransaction(Transaction transaction) throws Exception;
-	List<Transaction> getTransactionsByDate(String fromDate, String toDate);
+public interface TransactionDao {
 
+	List<Transaction> getFailedTransactions();
+
+	void updateTransaction(Transaction transaction) throws Exception;
 }
