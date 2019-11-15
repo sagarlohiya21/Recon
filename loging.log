@@ -377,3 +377,407 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2019-11-15 13:02:38.123 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
 2019-11-15 13:02:38.345 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2019-11-15 13:02:38.349 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 3.729 seconds (JVM running for 4.154)
+2019-11-15 13:05:04.171 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 20476 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 13:05:04.175 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
+2019-11-15 13:05:04.787 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-15 13:05:04.812 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-15 13:05:05.115 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 13:05:05.452 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-15 13:05:05.464 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-15 13:05:05.464 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 13:05:05.579 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-15 13:05:05.579 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1348 ms
+2019-11-15 13:05:05.746 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-15 13:05:05.809 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-15 13:05:05.988 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-15 13:05:06.081 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-15 13:05:06.148 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-15 13:05:06.172 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2019-11-15 13:05:07.290 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-15 13:05:07.307 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 13:05:07.459 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-15 13:05:07.622 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 13:05:07.821 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 13:05:07.824 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.008 seconds (JVM running for 4.495)
+2019-11-15 14:03:05.218 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 14644 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 14:03:05.220 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 14:03:06.601 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 14:03:06.834 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:06.836 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:06.849 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 13 ms
+2019-11-15 14:03:06.877 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 1.97 seconds (JVM running for 3.046)
+2019-11-15 14:03:06.896 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:06.897 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:06.905 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 14:03:06.918 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:06.919 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:06.922 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 14:03:06.994 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:06.994 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:06.996 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 14:03:06.997 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:06.997 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:07.000 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 14:03:07.001 [main] WARN  o.s.web.servlet.PageNotFound - No mapping for GET getFailedTransactions
+2019-11-15 14:03:07.016 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 14:03:39.185 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 12148 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 14:03:39.187 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 14:03:40.550 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 14:03:40.786 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:40.787 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:40.801 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 14 ms
+2019-11-15 14:03:40.829 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 1.954 seconds (JVM running for 2.992)
+2019-11-15 14:03:40.850 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:40.851 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:40.864 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 14:03:40.878 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:40.878 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:40.880 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 14:03:40.951 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:40.952 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:40.955 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 14:03:40.956 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:03:40.956 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:03:40.957 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 14:03:40.958 [main] WARN  o.s.web.servlet.PageNotFound - No mapping for GET getAllFailedTransactions
+2019-11-15 14:03:40.973 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 14:04:10.375 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 13708 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 14:04:10.377 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 14:04:11.730 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 14:04:11.967 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:04:11.968 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:04:11.982 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 14 ms
+2019-11-15 14:04:12.013 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 1.963 seconds (JVM running for 2.997)
+2019-11-15 14:04:12.036 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:04:12.037 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:04:12.045 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 14:04:12.057 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:04:12.058 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:04:12.061 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 14:04:12.138 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:04:12.139 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:04:12.140 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 14:04:12.141 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 14:04:12.141 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 14:04:12.144 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 14:04:12.203 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:17:07.566 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 1116 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 18:17:07.570 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 18:17:09.016 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:17:09.260 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:17:09.261 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:17:09.275 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 14 ms
+2019-11-15 18:17:09.303 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 2.034 seconds (JVM running for 3.625)
+2019-11-15 18:17:09.326 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:17:09.327 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:17:09.336 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:17:09.351 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:17:09.352 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:17:09.355 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:17:09.441 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:17:09.442 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:17:09.445 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 18:17:09.447 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:17:09.447 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:17:09.452 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2019-11-15 18:17:09.455 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:17:09.455 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:17:09.457 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:17:09.457 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:17:09.457 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:17:09.459 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:17:09.530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:42:52.100 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 12036 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 18:42:52.102 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 18:42:53.484 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:42:53.718 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:42:53.719 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:42:53.733 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 13 ms
+2019-11-15 18:42:53.762 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 1.973 seconds (JVM running for 3.021)
+2019-11-15 18:42:53.784 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:42:53.786 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:42:53.793 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:42:53.811 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:42:53.812 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:42:53.814 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:42:53.926 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:42:53.926 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:42:53.929 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 18:42:53.930 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:42:53.931 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:42:53.937 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 6 ms
+2019-11-15 18:42:53.942 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-11-15 18:42:53.953 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:42:53.953 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:42:53.965 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 12 ms
+2019-11-15 18:42:53.965 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:42:53.968 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:42:53.972 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2019-11-15 18:42:54.036 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:43:48.114 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 15860 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 18:43:48.116 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 18:43:49.511 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:43:49.759 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:49.760 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:49.774 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 13 ms
+2019-11-15 18:43:49.802 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 2.025 seconds (JVM running for 3.077)
+2019-11-15 18:43:49.822 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:49.823 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:49.832 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 18:43:49.843 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:49.843 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:49.846 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:43:49.923 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:49.923 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:49.925 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:43:49.926 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:49.927 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:49.932 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2019-11-15 18:43:49.936 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-11-15 18:43:49.946 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:49.946 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:49.948 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:43:49.948 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:49.949 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:49.951 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:43:50.031 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:50.031 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:50.034 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 18:43:50.035 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:43:50.035 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:43:50.036 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:43:50.048 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:47:42.753 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 7712 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 18:47:42.755 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 18:47:44.135 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:47:44.378 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.379 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.393 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 14 ms
+2019-11-15 18:47:44.420 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 1.975 seconds (JVM running for 3.033)
+2019-11-15 18:47:44.441 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.442 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.450 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:47:44.463 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.464 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.467 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:47:44.542 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.543 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.547 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2019-11-15 18:47:44.548 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.548 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.553 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2019-11-15 18:47:44.557 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-11-15 18:47:44.561 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.562 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.563 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:47:44.563 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.564 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.565 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:47:44.631 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.632 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.634 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:47:44.635 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.636 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.639 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:47:44.648 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.648 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.653 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2019-11-15 18:47:44.653 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:47:44.654 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:47:44.656 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:47:44.665 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:55:02.479 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 12292 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 18:55:02.483 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 18:55:03.851 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:55:04.088 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.089 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.102 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 13 ms
+2019-11-15 18:55:04.130 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 1.984 seconds (JVM running for 3.026)
+2019-11-15 18:55:04.156 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.157 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.166 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 18:55:04.190 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.191 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.193 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:55:04.277 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.277 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.302 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 25 ms
+2019-11-15 18:55:04.311 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.311 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.313 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:55:04.317 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-11-15 18:55:04.321 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.322 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.323 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:04.324 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.324 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.326 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:04.399 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.399 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.400 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:04.401 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.401 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.402 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:04.423 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.423 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.427 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2019-11-15 18:55:04.429 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:04.429 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:04.431 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:55:04.440 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:55:38.480 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 16856 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 18:55:38.482 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 18:55:39.897 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:55:40.141 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.142 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.156 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 14 ms
+2019-11-15 18:55:40.182 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 2.004 seconds (JVM running for 3.099)
+2019-11-15 18:55:40.204 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.205 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.215 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2019-11-15 18:55:40.232 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.232 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.235 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:40.313 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.313 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.314 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:40.316 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.316 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.318 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:40.321 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-11-15 18:55:40.325 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.326 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.327 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:40.328 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.329 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.330 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:40.386 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.386 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.388 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:55:40.388 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.388 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.389 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:55:40.412 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.413 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.417 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2019-11-15 18:55:40.418 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:55:40.418 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:55:40.421 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 18:55:40.429 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:58:51.740 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 22696 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 18:58:51.741 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 18:58:53.130 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 18:58:53.370 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.371 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.384 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 13 ms
+2019-11-15 18:58:53.415 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 1.991 seconds (JVM running for 3.067)
+2019-11-15 18:58:53.446 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.448 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.457 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 18:58:53.473 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.474 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.477 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:58:53.586 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.586 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.589 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 18:58:53.590 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.590 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.591 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:58:53.595 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-11-15 18:58:53.600 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.600 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.602 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:58:53.602 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.603 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.605 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 18:58:53.673 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.673 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.675 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:58:53.675 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.675 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.676 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:58:53.693 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.693 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.697 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2019-11-15 18:58:53.698 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 18:58:53.699 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 18:58:53.705 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 18:58:53.736 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 19:00:09.073 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 21920 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 19:00:09.075 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 19:00:10.466 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 19:00:10.711 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.712 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.726 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 14 ms
+2019-11-15 19:00:10.757 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 2.001 seconds (JVM running for 3.043)
+2019-11-15 19:00:10.783 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.784 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.794 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2019-11-15 19:00:10.811 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.812 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.814 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 19:00:10.903 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.904 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.905 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 19:00:10.907 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.908 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.909 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 19:00:10.914 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-11-15 19:00:10.919 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.919 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.920 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 19:00:10.921 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.921 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.923 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 19:00:10.988 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.989 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.995 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 19:00:10.995 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:10.995 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:10.996 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 19:00:11.003 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:11.003 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:11.005 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 19:00:11.005 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:00:11.005 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:00:11.008 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+2019-11-15 19:00:11.021 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 19:19:57.306 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Starting ReconciliationControllerTests on MCKD-TRNG60-15 with PID 22996 (started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-15 19:19:57.310 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - No active profile set, falling back to default profiles: default
+2019-11-15 19:19:58.834 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 19:19:59.107 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.108 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.124 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 15 ms
+2019-11-15 19:19:59.151 [main] INFO  c.c.r.t.c.ReconciliationControllerTests - Started ReconciliationControllerTests in 2.214 seconds (JVM running for 3.585)
+2019-11-15 19:19:59.176 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.177 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.195 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 7 ms
+2019-11-15 19:19:59.233 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.233 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.236 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 19:19:59.385 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.386 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.388 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 19:19:59.389 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.389 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.393 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2019-11-15 19:19:59.402 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-11-15 19:19:59.408 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.408 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.422 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 14 ms
+2019-11-15 19:19:59.422 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.423 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.424 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 19:19:59.487 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.487 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.490 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 19:19:59.490 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.490 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.493 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 19:19:59.515 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.516 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.518 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2019-11-15 19:19:59.518 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2019-11-15 19:19:59.518 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2019-11-15 19:19:59.519 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2019-11-15 19:19:59.535 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
