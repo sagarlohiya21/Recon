@@ -35,16 +35,9 @@ public class TransactionDaoImpl implements TransactionDao {
 	@Override
 	@Transactional
 	public void updateTransaction(Transaction transaction) throws Exception {
-		if (entityManager.find(Transaction.class, transaction.getPrimaryTransaction().getTransactionId()) != null) {
+		
 			entityManager.merge(transaction);
-			LOGGER.info("Transaction with transaction ID " + transaction.getPrimaryTransaction().getTransactionId()
-					+ " is updated successfully");
-		} else {
-			LOGGER.debug("Transaction with transaction ID " + transaction.getPrimaryTransaction().getTransactionId()
-					+ " is not found in Database");
-			throw new Exception("Transaction with transaction ID "
-					+ transaction.getPrimaryTransaction().getTransactionId() + " is not found");
-		}
+			LOGGER.info("Transaction with transaction ID updates" );
 	}
 
 }

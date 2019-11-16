@@ -22,10 +22,13 @@ public class TransactionController {
 	public List<Transaction> getTransaction() throws Exception {
 		return ts.getFailedTransactions();
 	}
-	
+
 	@RequestMapping(method = RequestMethod.GET, value = "/test")
 	public void testWorking() throws Exception {
-		System.out.println("lol");
+		List<Transaction> list = ts.getFailedTransactions();
+		System.out.println(list.size());
+		System.out.println(list.get(0));
+		ts.processFailedTransaction();
 	}
 
 }

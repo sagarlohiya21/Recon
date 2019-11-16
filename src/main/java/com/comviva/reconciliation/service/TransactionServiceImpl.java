@@ -27,13 +27,11 @@ public class TransactionServiceImpl implements TransactionService {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionServiceImpl.class);
 
-
 	@Override
 	public List<Transaction> getFailedTransactions() {
 		LOGGER.info("Fetching all failed transactions");
 		return transactionDao.getFailedTransactions();
 	}
-
 
 	@Override
 	@Transactional

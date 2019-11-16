@@ -65,7 +65,7 @@ public class RequestServiceImpl implements RequestService {
 		LOGGER.info(
 				"calling Status Check API for transaction :" + transaction.getPrimaryTransaction().getTransactionId());
 		ResponseEntity<StatusCheckResponse> responseEntity = restTemplate.postForEntity(
-				"http://localhost:8090/successStatus", getStatusCheckRequest(transaction), StatusCheckResponse.class);
+				"http://localhost:8090/transactionStatus", getStatusCheckRequest(transaction), StatusCheckResponse.class);
 		StatusCheckResponse StatusCheckResponse = responseEntity.getBody();
 		return StatusCheckResponse;
 	}
