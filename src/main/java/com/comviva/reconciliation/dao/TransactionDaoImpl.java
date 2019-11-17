@@ -35,9 +35,8 @@ public class TransactionDaoImpl implements TransactionDao {
 	@Override
 	@Transactional
 	public void updateTransaction(Transaction transaction) throws Exception {
-		
-			entityManager.merge(transaction);
-			LOGGER.info("Transaction with transaction ID updates" );
+		entityManager.merge(transaction);
+		LOGGER.info("Transaction with transaction ID updates");
 	}
 
 }

@@ -1,5 +1,7 @@
 package com.comviva.reconciliation.service;
 
+import java.net.SocketTimeoutException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -91,8 +93,8 @@ public class TransactionServiceImpl implements TransactionService {
 		try {
 			// iterating through all the transactions
 			for (Transaction failedTransaction : failedTransactions) {
-				LOGGER.info("processing failed transaction :"
-						+ failedTransaction.getPrimaryTransaction().getTransactionId());
+				LOGGER.info("processing failed transaction :");
+//						+ failedTransaction.getPrimaryTransaction().getTransactionId());
 				if (requestService.sendStatusCheckRequest(failedTransaction).getTxnStatus().equals("200")) { // calling
 																												// status
 																												// check
@@ -101,8 +103,8 @@ public class TransactionServiceImpl implements TransactionService {
 																												// each
 																												// failed
 																												// transaction
-					LOGGER.info("Money is debited for transaction :"
-							+ failedTransaction.getPrimaryTransaction().getTransactionId());
+					LOGGER.info("Money is debited for transaction :");
+//							+ failedTransaction.getPrimaryTransaction().getTransactionId());
 					int attempts = 0;
 					boolean flag;
 					do {
@@ -119,10 +121,11 @@ public class TransactionServiceImpl implements TransactionService {
 					if (!flag) {
 						System.out.println("maximum reached");
 						updateTransaction(failedTransaction, "" + attempts + "", 21);
+
 					}
 				} else {
-					LOGGER.info("Money is not debited for transaction :"
-							+ failedTransaction.getPrimaryTransaction().getTransactionId());
+					LOGGER.info("Money is not debited for transaction :");
+//							+ failedTransaction.getPrimaryTransaction().getTransactionId());
 					updateTransactionStatus(failedTransaction);
 				}
 			}
@@ -132,4 +135,16 @@ public class TransactionServiceImpl implements TransactionService {
 		}
 	}
 
+	/**
+	 * Test method for the request timeouts
+	 * 
+	 * @throws URISyntaxException
+	 */
+	public void testTimeout(Transaction t) throws URISyntaxException {
+		try {
+			((RequestServiceImpl) requestService).sendReversalRequestFail(t);
+		} catch (SocketTimeoutException e) {
+			System.out.println("DFHDSHFSDJDSL");
+		}
+	}
 }

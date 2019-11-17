@@ -6,6 +6,6 @@ import com.comviva.reconciliation.entity.Transaction;
 public interface RequestService {
 
 	StatusCheckResponse sendStatusCheckRequest(Transaction transaction);
-	boolean sendReversalRequest(Transaction transaction);
+	boolean sendReversalRequest(Transaction transaction) throws Exception;
 
 }

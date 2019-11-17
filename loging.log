@@ -1,613 +1,187 @@
-2019-11-16 12:09:59.369 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 11764 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 12:09:59.394 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 12:10:00.319 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 12:10:00.347 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
-2019-11-16 12:10:00.741 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 12:10:01.093 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 12:10:01.103 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 12:10:01.103 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 12:10:01.242 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 12:10:01.243 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1725 ms
-2019-11-16 12:10:01.486 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 12:10:01.555 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 12:10:01.736 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 12:10:01.837 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 12:10:01.900 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 12:10:01.923 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 12:10:03.584 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 12:10:03.598 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 12:10:03.761 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 12:10:03.915 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 12:10:04.152 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 12:10:04.159 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 5.315 seconds (JVM running for 6.22)
-2019-11-16 12:24:30.265 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 13452 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 12:24:30.268 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 12:24:30.887 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 12:24:30.913 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2019-11-16 12:24:31.279 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 12:24:31.659 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 12:24:31.669 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 12:24:31.669 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 12:24:31.811 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 12:24:31.811 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1485 ms
-2019-11-16 12:24:32.006 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 12:24:32.092 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 12:24:32.285 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 12:24:32.384 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 12:24:32.450 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 12:24:32.473 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 12:24:33.595 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 12:24:33.603 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 12:24:33.759 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 12:24:33.946 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 12:24:34.181 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 12:24:34.183 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.383 seconds (JVM running for 4.829)
-2019-11-16 12:25:26.556 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 5660 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 12:25:26.560 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 12:25:27.197 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 12:25:27.231 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
-2019-11-16 12:25:27.568 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 12:25:27.950 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 12:25:27.960 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 12:25:27.960 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 12:25:28.093 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 12:25:28.093 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1487 ms
-2019-11-16 12:25:28.274 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 12:25:28.342 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 12:25:28.520 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 12:25:28.618 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 12:25:28.677 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 12:25:28.702 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 12:25:29.650 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 12:25:29.657 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 12:25:29.831 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 12:25:29.990 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 12:25:30.206 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 12:25:30.209 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.098 seconds (JVM running for 4.532)
-2019-11-16 12:25:43.360 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-16 12:25:43.361 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-11-16 12:25:43.370 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-2019-11-16 12:25:43.473 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 12:25:43.484 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 12:26:15.005 [http-nio-8080-exec-2] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 12:26:15.006 [http-nio-8080-exec-2] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 12:27:14.372 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 20292 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 12:27:14.375 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 12:27:15.040 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 12:27:15.068 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2019-11-16 12:27:15.430 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 12:27:15.812 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 12:27:15.823 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 12:27:15.823 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 12:27:27.325 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 12:27:27.325 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 12:27:37.434 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 11448 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 12:27:37.439 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 12:27:38.117 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 12:27:38.142 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2019-11-16 12:27:38.496 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 12:27:38.925 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 12:27:38.937 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 12:27:38.937 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 12:27:39.051 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 12:27:39.052 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1555 ms
-2019-11-16 12:27:39.244 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 12:27:39.310 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 12:27:39.485 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 12:27:39.576 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 12:27:39.636 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 12:27:39.662 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 12:27:40.690 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 12:27:40.698 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 12:27:40.861 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 12:27:41.038 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 12:27:41.280 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 12:27:41.283 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.205 seconds (JVM running for 4.643)
-2019-11-16 12:27:45.256 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-16 12:27:45.257 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-11-16 12:27:45.268 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
-2019-11-16 12:27:45.361 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 12:27:45.390 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 13:07:22.954 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 22284 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 13:07:22.959 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 13:07:23.602 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 13:07:23.630 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2019-11-16 13:07:23.981 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 13:07:24.319 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 13:07:24.329 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 13:07:24.329 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 13:07:24.447 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 13:07:24.448 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1435 ms
-2019-11-16 13:07:24.640 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 13:07:24.708 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 13:07:24.895 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 13:07:24.988 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 13:07:25.057 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 13:07:25.081 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 13:07:25.915 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 13:07:25.922 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 13:07:26.057 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 13:07:26.233 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 13:07:26.442 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 13:07:26.445 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 3.957 seconds (JVM running for 4.417)
-2019-11-16 13:08:28.306 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 836 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 13:08:28.310 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 13:08:28.907 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 13:08:28.932 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2019-11-16 13:08:29.221 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 13:08:29.548 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 13:08:29.559 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 13:08:29.560 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 13:08:29.678 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 13:08:29.678 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1314 ms
-2019-11-16 13:08:29.856 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 13:08:29.925 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 13:08:30.111 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 13:08:30.198 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 13:08:30.253 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 13:08:30.278 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 13:08:31.494 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 13:08:31.504 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 13:08:31.636 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 13:08:31.836 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 13:08:32.104 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 13:08:32.106 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.199 seconds (JVM running for 4.671)
-2019-11-16 13:08:50.293 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-16 13:08:50.294 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-11-16 13:08:50.304 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
-2019-11-16 13:08:50.401 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 13:08:50.413 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 13:08:51.273 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 13:08:51.274 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 13:08:51.749 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :1012145936713990776
-2019-11-16 13:08:51.752 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :1012145936713990776
-2019-11-16 13:08:51.752 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :1012145936713990776
-2019-11-16 13:08:52.092 [http-nio-8080-exec-1] ERROR c.c.r.service.TransactionServiceImpl -  Error occured while processing failed transactions 
-2019-11-16 13:11:31.841 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 17728 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 13:11:31.844 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 13:11:32.474 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 13:11:32.498 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2019-11-16 13:11:32.888 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 13:11:33.233 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 13:11:33.243 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 13:11:33.243 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 13:11:33.365 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 13:11:33.365 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1463 ms
-2019-11-16 13:11:33.574 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 13:11:33.645 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 13:11:33.833 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 13:11:33.925 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 13:11:33.983 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 13:11:34.007 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 13:11:35.056 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 13:11:35.063 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 13:11:35.214 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 13:11:35.394 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 13:11:35.649 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 13:11:35.652 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.18 seconds (JVM running for 4.618)
-2019-11-16 13:11:37.296 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-16 13:11:37.297 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-11-16 13:11:37.304 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
-2019-11-16 13:11:37.386 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 13:11:37.391 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 13:11:38.115 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 13:11:38.116 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 13:11:38.580 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - processing failed transaction :1012145936713990776
-2019-11-16 13:11:38.580 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - calling Status Check API for transaction :1012145936713990776
-2019-11-16 13:11:38.580 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Constructing statusCheck request for transaction :1012145936713990776
-2019-11-16 13:11:38.883 [http-nio-8080-exec-1] ERROR c.c.r.service.TransactionServiceImpl -  Error occured while processing failed transactions 
-2019-11-16 16:03:57.742 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 21312 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 16:03:57.747 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 16:03:58.550 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 16:03:58.584 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
-2019-11-16 16:03:58.940 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 16:03:59.257 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 16:03:59.267 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 16:03:59.267 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 16:03:59.396 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 16:03:59.397 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1555 ms
-2019-11-16 16:03:59.606 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 16:03:59.714 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 16:03:59.854 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 16:03:59.947 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 16:04:00.004 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 16:04:00.030 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 16:04:01.150 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 16:04:01.176 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 16:04:01.360 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 16:04:01.546 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e3db14, org.springframework.security.web.context.SecurityContextPersistenceFilter@72a8361b, org.springframework.security.web.header.HeaderWriterFilter@29d070c7, org.springframework.security.web.authentication.logout.LogoutFilter@39c87b42, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@224d86d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c48b543, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c06b113, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fb54740, org.springframework.security.web.session.SessionManagementFilter@44dfdd58, org.springframework.security.web.access.ExceptionTranslationFilter@34edd065, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b5a19ed]
-2019-11-16 16:04:01.561 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
-2019-11-16 16:04:01.562 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authProvider' defined in class path resource [com/comviva/reconciliation/security/WebSecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mysql.cj.protocol.AuthenticationProvider]: Factory method 'authProvider' threw exception; nested exception is java.lang.ClassCastException: org.springframework.security.authentication.dao.DaoAuthenticationProvider cannot be cast to com.mysql.cj.protocol.AuthenticationProvider
-2019-11-16 16:04:01.563 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 16:04:01.565 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2019-11-16 16:04:01.570 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2019-11-16 16:04:01.572 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2019-11-16 16:04:01.582 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-11-16 16:04:01.586 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authProvider' defined in class path resource [com/comviva/reconciliation/security/WebSecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mysql.cj.protocol.AuthenticationProvider]: Factory method 'authProvider' threw exception; nested exception is java.lang.ClassCastException: org.springframework.security.authentication.dao.DaoAuthenticationProvider cannot be cast to com.mysql.cj.protocol.AuthenticationProvider
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.comviva.reconciliation.ReconciliationApplication.main(ReconciliationApplication.java:13)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mysql.cj.protocol.AuthenticationProvider]: Factory method 'authProvider' threw exception; nested exception is java.lang.ClassCastException: org.springframework.security.authentication.dao.DaoAuthenticationProvider cannot be cast to com.mysql.cj.protocol.AuthenticationProvider
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
-	... 19 common frames omitted
-Caused by: java.lang.ClassCastException: org.springframework.security.authentication.dao.DaoAuthenticationProvider cannot be cast to com.mysql.cj.protocol.AuthenticationProvider
-	at com.comviva.reconciliation.security.WebSecurityConfig.authProvider(WebSecurityConfig.java:36)
-	at com.comviva.reconciliation.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$9834bbe0.CGLIB$authProvider$3(<generated>)
-	at com.comviva.reconciliation.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$9834bbe0$$FastClassBySpringCGLIB$$d12c448d.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at com.comviva.reconciliation.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$9834bbe0.authProvider(<generated>)
+2019-11-17 11:42:20.322 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 15788 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-17 11:42:20.330 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
+2019-11-17 11:42:21.106 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-17 11:42:21.140 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2019-11-17 11:42:21.479 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 11:42:21.754 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-17 11:42:21.763 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-17 11:42:21.763 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-17 11:42:22.007 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-17 11:42:22.013 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-17 11:42:22.013 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1595 ms
+2019-11-17 11:42:22.239 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-17 11:42:22.305 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-17 11:42:22.449 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-17 11:42:22.552 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-17 11:42:22.616 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-17 11:42:22.640 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2019-11-17 11:42:23.775 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-17 11:42:23.783 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-17 11:42:24.036 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-17 11:42:24.130 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
+2019-11-17 11:42:24.264 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e2f20b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@23564dd2, org.springframework.security.web.header.HeaderWriterFilter@1471b98d, org.springframework.security.web.authentication.logout.LogoutFilter@4e8598d9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5844a2d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dd0a0d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@589fb74d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@504497fa, org.springframework.security.web.session.SessionManagementFilter@58c42c8c, org.springframework.security.web.access.ExceptionTranslationFilter@633ddc0c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1491cd6c]
+2019-11-17 11:42:24.489 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-17 11:42:24.752 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-17 11:42:24.754 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.79 seconds (JVM running for 5.239)
+2019-11-17 11:42:37.144 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-17 11:42:37.145 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-17 11:42:37.156 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-11-17 11:42:52.215 [http-nio-8080-exec-8] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
+2019-11-17 11:42:52.216 [http-nio-8080-exec-8] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
+2019-11-17 11:42:52.842 [http-nio-8080-exec-3] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-17 11:42:52.847 [http-nio-8080-exec-3] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-17 11:43:05.059 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-17 11:43:05.063 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-17 11:43:07.641 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8090/failedReversal": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out] with root cause
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:361)
+	at com.comviva.reconciliation.service.RequestServiceImpl.sendReversalRequestFail(RequestServiceImpl.java:144)
+	at com.comviva.reconciliation.service.TransactionServiceImpl.testTimeout(TransactionServiceImpl.java:145)
+	at com.comviva.reconciliation.service.TransactionServiceImpl$$FastClassBySpringCGLIB$$ad479df.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.comviva.reconciliation.service.TransactionServiceImpl$$EnhancerBySpringCGLIB$$fb393b15.testTimeout(<generated>)
+	at com.comviva.reconciliation.controller.TransactionController.testWorking(TransactionController.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 20 common frames omitted
-2019-11-16 17:43:10.216 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 1708 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 17:43:10.220 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 17:43:10.995 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 17:43:11.030 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
-2019-11-16 17:43:11.417 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 17:43:11.754 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 17:43:11.764 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 17:43:11.765 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 17:43:11.888 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 17:43:11.888 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1619 ms
-2019-11-16 17:43:12.085 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 17:43:12.223 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 17:43:12.358 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 17:43:12.454 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 17:43:12.515 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 17:43:12.540 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 17:43:13.626 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 17:43:13.633 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 17:43:13.760 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 17:43:13.946 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15d236fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@539c4830, org.springframework.security.web.header.HeaderWriterFilter@6486fe7b, org.springframework.security.web.authentication.logout.LogoutFilter@5ea7bc4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2365ea38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28b523a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@238291d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b9c42bd, org.springframework.security.web.session.SessionManagementFilter@4645679e, org.springframework.security.web.access.ExceptionTranslationFilter@52f8a6f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@509a6095]
-2019-11-16 17:43:13.962 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
-2019-11-16 17:43:13.963 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authProvider' defined in class path resource [com/comviva/reconciliation/security/WebSecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mysql.cj.protocol.AuthenticationProvider]: Factory method 'authProvider' threw exception; nested exception is java.lang.ClassCastException: org.springframework.security.authentication.dao.DaoAuthenticationProvider cannot be cast to com.mysql.cj.protocol.AuthenticationProvider
-2019-11-16 17:43:13.964 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 17:43:13.967 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2019-11-16 17:43:13.971 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2019-11-16 17:43:13.974 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2019-11-16 17:43:13.983 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-11-16 17:43:13.988 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authProvider' defined in class path resource [com/comviva/reconciliation/security/WebSecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mysql.cj.protocol.AuthenticationProvider]: Factory method 'authProvider' threw exception; nested exception is java.lang.ClassCastException: org.springframework.security.authentication.dao.DaoAuthenticationProvider cannot be cast to com.mysql.cj.protocol.AuthenticationProvider
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.comviva.reconciliation.ReconciliationApplication.main(ReconciliationApplication.java:13)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mysql.cj.protocol.AuthenticationProvider]: Factory method 'authProvider' threw exception; nested exception is java.lang.ClassCastException: org.springframework.security.authentication.dao.DaoAuthenticationProvider cannot be cast to com.mysql.cj.protocol.AuthenticationProvider
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
-	... 19 common frames omitted
-Caused by: java.lang.ClassCastException: org.springframework.security.authentication.dao.DaoAuthenticationProvider cannot be cast to com.mysql.cj.protocol.AuthenticationProvider
-	at com.comviva.reconciliation.security.WebSecurityConfig.authProvider(WebSecurityConfig.java:36)
-	at com.comviva.reconciliation.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$f2633cf4.CGLIB$authProvider$3(<generated>)
-	at com.comviva.reconciliation.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$f2633cf4$$FastClassBySpringCGLIB$$db56dd09.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at com.comviva.reconciliation.security.WebSecurityConfig$$EnhancerBySpringCGLIB$$f2633cf4.authProvider(<generated>)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 20 common frames omitted
-2019-11-16 17:47:12.384 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 15872 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 17:47:12.387 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 17:47:12.575 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.comviva.reconciliation.ReconciliationApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userPrinciple' for bean class [com.comviva.reconciliation.user.entity.UserPrinciple] conflicts with existing, non-compatible bean definition of same name and class [com.comviva.reconciliation.entity.UserPrinciple]
-2019-11-16 17:47:12.666 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.comviva.reconciliation.ReconciliationApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userPrinciple' for bean class [com.comviva.reconciliation.user.entity.UserPrinciple] conflicts with existing, non-compatible bean definition of same name and class [com.comviva.reconciliation.entity.UserPrinciple]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:325)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:242)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.comviva.reconciliation.ReconciliationApplication.main(ReconciliationApplication.java:13)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userPrinciple' for bean class [com.comviva.reconciliation.user.entity.UserPrinciple] conflicts with existing, non-compatible bean definition of same name and class [com.comviva.reconciliation.entity.UserPrinciple]
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
-	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
-	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:290)
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
-	... 13 common frames omitted
-2019-11-16 17:48:37.999 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 9436 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 17:48:38.002 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 17:48:38.755 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 17:48:38.796 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
-2019-11-16 17:48:39.156 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 17:48:39.457 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 17:48:39.468 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 17:48:39.468 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 17:48:39.588 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 17:48:39.588 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1517 ms
-2019-11-16 17:48:39.787 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 17:48:39.925 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 17:48:40.084 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 17:48:40.190 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 17:48:40.255 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 17:48:40.278 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 17:48:41.279 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 17:48:41.286 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 17:48:41.414 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 17:48:41.514 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
-2019-11-16 17:48:41.660 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@129c4d19, org.springframework.security.web.context.SecurityContextPersistenceFilter@18ffca6c, org.springframework.security.web.header.HeaderWriterFilter@2055833f, org.springframework.security.web.authentication.logout.LogoutFilter@34edd065, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50cdfafa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f8f1712, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@511da44f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11810917, org.springframework.security.web.session.SessionManagementFilter@310d57b1, org.springframework.security.web.access.ExceptionTranslationFilter@5939e24, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58a3d521]
-2019-11-16 17:48:41.832 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 17:48:42.043 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 17:48:42.046 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.423 seconds (JVM running for 4.879)
-2019-11-16 18:27:08.893 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 8360 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 18:27:08.898 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 18:27:09.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 18:27:09.746 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
-2019-11-16 18:27:10.095 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 18:27:10.462 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 18:27:10.474 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 18:27:10.474 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 18:27:10.601 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 18:27:10.601 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1607 ms
-2019-11-16 18:27:10.819 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 18:27:10.953 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 18:27:11.103 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 18:27:11.211 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 18:27:11.283 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 18:27:11.307 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 18:27:12.246 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 18:27:12.253 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 18:27:12.398 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 18:27:12.505 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
-2019-11-16 18:27:12.625 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5faeeb56, org.springframework.security.web.context.SecurityContextPersistenceFilter@6486fe7b, org.springframework.security.web.header.HeaderWriterFilter@52ecc989, org.springframework.security.web.authentication.logout.LogoutFilter@c48b543, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11810917, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4645679e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71d55b7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5396eeb1, org.springframework.security.web.session.SessionManagementFilter@52f8a6f4, org.springframework.security.web.access.ExceptionTranslationFilter@5f8f1712, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50cdfafa]
-2019-11-16 18:27:12.805 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 18:27:13.045 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 18:27:13.047 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.555 seconds (JVM running for 5.052)
-2019-11-16 18:27:33.782 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-16 18:27:33.783 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-11-16 18:27:33.795 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
-2019-11-16 18:30:01.451 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 14148 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 18:30:01.455 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 18:30:02.120 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 18:30:02.151 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
-2019-11-16 18:30:02.497 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 18:30:02.803 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 18:30:02.813 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 18:30:02.814 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 18:30:03.090 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2019-11-16 18:30:03.095 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 18:30:03.095 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1578 ms
-2019-11-16 18:30:03.317 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 18:30:03.384 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 18:30:03.525 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 18:30:03.617 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 18:30:03.674 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 18:30:03.698 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 18:30:04.889 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 18:30:04.896 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 18:30:05.003 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 18:30:05.099 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
-2019-11-16 18:30:05.214 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@573aeab2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d874695, org.springframework.security.web.header.HeaderWriterFilter@47fb7ec9, org.springframework.security.web.authentication.logout.LogoutFilter@798cf6d2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70f148dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79add732, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@aa1bb14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1304e0d7, org.springframework.security.web.session.SessionManagementFilter@4703c998, org.springframework.security.web.access.ExceptionTranslationFilter@5b066c33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b28a7bf]
-2019-11-16 18:30:05.376 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 18:30:05.592 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 18:30:05.595 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.553 seconds (JVM running for 4.994)
-2019-11-16 18:30:23.217 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-16 18:30:23.229 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-11-16 18:30:23.274 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 45 ms
-2019-11-16 18:30:49.865 [http-nio-8080-exec-9] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:30:49.866 [http-nio-8080-exec-9] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:30:50.009 [http-nio-8080-exec-9] ERROR c.c.r.s.s.UserDetailsServiceImpl - User Details with user name : admin not foud
-2019-11-16 18:36:58.622 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 14848 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 18:36:58.626 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 18:36:59.298 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 18:36:59.333 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
-2019-11-16 18:36:59.665 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 18:36:59.954 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 18:36:59.966 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 18:36:59.966 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 18:37:00.220 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2019-11-16 18:37:00.225 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 18:37:00.225 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1539 ms
-2019-11-16 18:37:00.452 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 18:37:00.523 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 18:37:00.675 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 18:37:00.775 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 18:37:00.840 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 18:37:00.866 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 18:37:01.794 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 18:37:01.801 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 18:37:01.919 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 18:37:02.014 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
-2019-11-16 18:37:02.127 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67d8faec, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e0ad709, org.springframework.security.web.header.HeaderWriterFilter@7b297740, org.springframework.security.web.authentication.logout.LogoutFilter@4eb9ae4d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1be52861, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39449465, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@743d0d44, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@751d7425, org.springframework.security.web.session.SessionManagementFilter@57ce2898, org.springframework.security.web.access.ExceptionTranslationFilter@7a36c83a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ac5b4c]
-2019-11-16 18:37:02.287 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 18:37:02.494 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 18:37:02.497 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.24 seconds (JVM running for 4.707)
-2019-11-16 18:37:06.791 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-16 18:37:06.792 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-11-16 18:37:06.799 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
-2019-11-16 18:37:27.770 [http-nio-8080-exec-4] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:37:27.771 [http-nio-8080-exec-4] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:41:00.981 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 19068 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 18:41:00.984 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 18:41:01.669 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 18:41:01.701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
-2019-11-16 18:41:02.017 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 18:41:02.295 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 18:41:02.304 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 18:41:02.305 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 18:41:02.556 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2019-11-16 18:41:02.561 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 18:41:02.561 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1518 ms
-2019-11-16 18:41:02.781 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 18:41:02.852 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 18:41:03.000 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 18:41:03.103 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 18:41:03.166 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 18:41:03.190 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 18:41:04.039 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 18:41:04.046 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 18:41:04.173 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 18:41:04.265 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
-2019-11-16 18:41:04.384 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c71c889, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f68a7f8, org.springframework.security.web.header.HeaderWriterFilter@6d6cd1e0, org.springframework.security.web.authentication.logout.LogoutFilter@65600fb3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@cf01c2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f811029, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56cfe6be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cc8d70d, org.springframework.security.web.session.SessionManagementFilter@9785903, org.springframework.security.web.access.ExceptionTranslationFilter@6ce26986, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2616b618]
-2019-11-16 18:41:04.551 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 18:41:04.728 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2019-11-16 18:41:04.734 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-11-16 18:41:04.736 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2019-11-16 18:41:04.740 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2019-11-16 18:41:04.741 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 18:41:04.743 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2019-11-16 18:41:04.746 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2019-11-16 18:41:38.616 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 12048 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
-2019-11-16 18:41:38.621 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
-2019-11-16 18:41:39.315 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-16 18:41:39.348 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
-2019-11-16 18:41:39.708 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-16 18:41:39.998 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2019-11-16 18:41:40.009 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-11-16 18:41:40.009 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-11-16 18:41:40.275 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2019-11-16 18:41:40.279 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-11-16 18:41:40.280 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1594 ms
-2019-11-16 18:41:40.512 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-11-16 18:41:40.580 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
-2019-11-16 18:41:40.725 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-11-16 18:41:40.824 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2019-11-16 18:41:40.888 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2019-11-16 18:41:40.912 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2019-11-16 18:41:41.906 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-11-16 18:41:41.914 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-11-16 18:41:42.033 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-11-16 18:41:42.125 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
-2019-11-16 18:41:42.243 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c47a053, org.springframework.security.web.context.SecurityContextPersistenceFilter@56cfe6be, org.springframework.security.web.header.HeaderWriterFilter@56a05324, org.springframework.security.web.authentication.logout.LogoutFilter@9690008, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c59a0f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@149aa7b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71c0b742, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d2a86c0, org.springframework.security.web.session.SessionManagementFilter@342beaf6, org.springframework.security.web.access.ExceptionTranslationFilter@7f2b584b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f15f52a]
-2019-11-16 18:41:42.412 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-16 18:41:42.626 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-16 18:41:42.633 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.362 seconds (JVM running for 4.837)
-2019-11-16 18:41:54.692 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-16 18:41:54.697 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-11-16 18:41:54.709 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
-2019-11-16 18:42:00.865 [http-nio-8080-exec-5] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:42:00.866 [http-nio-8080-exec-5] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:42:01.681 [http-nio-8080-exec-10] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:42:01.686 [http-nio-8080-exec-10] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 18:43:23.451 [http-nio-8080-exec-4] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:43:23.453 [http-nio-8080-exec-4] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:43:23.940 [http-nio-8080-exec-8] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:43:23.940 [http-nio-8080-exec-8] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 18:44:42.304 [http-nio-8080-exec-8] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:44:42.310 [http-nio-8080-exec-8] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:44:42.755 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:44:42.755 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 18:45:04.364 [http-nio-8080-exec-7] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:45:04.366 [http-nio-8080-exec-7] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:45:04.783 [http-nio-8080-exec-2] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:45:04.783 [http-nio-8080-exec-2] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 18:47:57.574 [http-nio-8080-exec-5] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:47:57.576 [http-nio-8080-exec-5] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:47:58.084 [http-nio-8080-exec-9] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:47:58.085 [http-nio-8080-exec-9] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 18:48:42.134 [http-nio-8080-exec-2] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:48:42.137 [http-nio-8080-exec-2] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:48:42.611 [http-nio-8080-exec-6] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:48:42.611 [http-nio-8080-exec-6] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 18:49:50.003 [http-nio-8080-exec-8] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:49:50.004 [http-nio-8080-exec-8] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 18:54:55.060 [http-nio-8080-exec-7] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:54:55.061 [http-nio-8080-exec-7] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:54:55.485 [http-nio-8080-exec-2] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:54:55.485 [http-nio-8080-exec-2] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 18:56:52.450 [http-nio-8080-exec-6] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 18:56:52.451 [http-nio-8080-exec-6] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 18:56:53.259 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 18:56:53.260 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:03:40.255 [http-nio-8080-exec-4] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:03:40.258 [http-nio-8080-exec-4] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:04:35.602 [http-nio-8080-exec-5] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:04:35.605 [http-nio-8080-exec-5] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:04:58.132 [http-nio-8080-exec-8] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:04:58.135 [http-nio-8080-exec-8] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:05:42.970 [http-nio-8080-exec-7] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:05:42.971 [http-nio-8080-exec-7] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:09:17.199 [http-nio-8080-exec-8] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 19:09:17.200 [http-nio-8080-exec-8] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 19:09:17.642 [http-nio-8080-exec-10] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:09:17.642 [http-nio-8080-exec-10] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:10:19.538 [http-nio-8080-exec-9] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:10:19.538 [http-nio-8080-exec-9] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:10:40.846 [http-nio-8080-exec-8] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 19:10:40.848 [http-nio-8080-exec-8] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 19:10:41.246 [http-nio-8080-exec-10] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:10:41.247 [http-nio-8080-exec-10] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:10:44.860 [http-nio-8080-exec-8] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:10:44.861 [http-nio-8080-exec-8] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:11:57.272 [http-nio-8080-exec-1] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 19:11:57.272 [http-nio-8080-exec-1] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 19:11:57.782 [http-nio-8080-exec-6] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:11:57.782 [http-nio-8080-exec-6] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:16:24.343 [http-nio-8080-exec-1] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 19:16:24.350 [http-nio-8080-exec-1] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 19:16:25.130 [http-nio-8080-exec-6] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:16:25.130 [http-nio-8080-exec-6] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
-2019-11-16 19:20:15.481 [http-nio-8080-exec-6] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
-2019-11-16 19:20:15.482 [http-nio-8080-exec-6] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
-2019-11-16 19:20:16.295 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
-2019-11-16 19:20:16.296 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-11-17 11:51:42.064 [main] INFO  c.c.r.ReconciliationApplication - Starting ReconciliationApplication on MCKD-TRNG60-15 with PID 22644 (C:\Users\comviva\Desktop\reconciliation\target\classes started by comviva in C:\Users\comviva\Desktop\reconciliation)
+2019-11-17 11:51:42.067 [main] INFO  c.c.r.ReconciliationApplication - No active profile set, falling back to default profiles: default
+2019-11-17 11:51:42.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-17 11:51:42.812 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-11-17 11:51:43.140 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 11:51:43.421 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-17 11:51:43.430 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-17 11:51:43.431 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-17 11:51:43.686 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-17 11:51:43.690 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-17 11:51:43.691 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1569 ms
+2019-11-17 11:51:43.918 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-17 11:51:43.987 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-17 11:51:44.130 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-17 11:51:44.228 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-17 11:51:44.286 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-17 11:51:44.310 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2019-11-17 11:51:45.373 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-17 11:51:45.380 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-17 11:51:45.632 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-17 11:51:45.720 [main] INFO  c.c.r.security.WebSecurityConfig - Constructing Authentication Provider.....
+2019-11-17 11:51:45.838 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c4b5ceb, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b5021d1, org.springframework.security.web.header.HeaderWriterFilter@4662752a, org.springframework.security.web.authentication.logout.LogoutFilter@1144a02b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a8f8555, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21d9cd04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@642c6461, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c07add6, org.springframework.security.web.session.SessionManagementFilter@514377fc, org.springframework.security.web.access.ExceptionTranslationFilter@9263c54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@589fb74d]
+2019-11-17 11:51:46.002 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-17 11:51:46.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-17 11:51:46.222 [main] INFO  c.c.r.ReconciliationApplication - Started ReconciliationApplication in 4.521 seconds (JVM running for 4.972)
+2019-11-17 11:51:52.999 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-17 11:51:53.002 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-17 11:51:53.009 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-11-17 11:52:05.820 [http-nio-8080-exec-6] INFO  c.c.r.s.s.UserDetailsServiceImpl - Laoding User by user Name...
+2019-11-17 11:52:05.821 [http-nio-8080-exec-6] INFO  c.c.r.security.dao.UserDaoImpl - Fetching User Details By User Name : admin
+2019-11-17 11:52:06.740 [http-nio-8080-exec-1] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-17 11:52:06.752 [http-nio-8080-exec-1] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions
+2019-11-17 11:52:10.414 [http-nio-8080-exec-2] INFO  c.c.r.service.TransactionServiceImpl - Fetching all failed transactions
+2019-11-17 11:52:10.415 [http-nio-8080-exec-2] INFO  c.c.r.dao.TransactionDaoImpl - Fetching all failed transactions

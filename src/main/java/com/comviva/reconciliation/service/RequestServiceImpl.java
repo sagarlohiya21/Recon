@@ -1,10 +1,16 @@
 package com.comviva.reconciliation.service;
 
+import java.net.SocketTimeoutException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import com.comviva.reconciliation.entity.ReversalRequest;
@@ -47,7 +53,8 @@ public class RequestServiceImpl implements RequestService {
 	 *
 	 */
 	private ReversalRequest getReversalRequest(Transaction transaction) {
-		LOGGER.info("Constructing Reversal request for transaction :" + transaction.getPrimaryTransaction().getTransactionId());
+		LOGGER.info("Constructing Reversal request for transaction :"
+				+ transaction.getPrimaryTransaction().getTransactionId());
 		return new ReversalRequest("dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy",
 				"dummy", "dummy", "dummy", "dummy");
 	}
@@ -65,7 +72,8 @@ public class RequestServiceImpl implements RequestService {
 		LOGGER.info(
 				"calling Status Check API for transaction :" + transaction.getPrimaryTransaction().getTransactionId());
 		ResponseEntity<StatusCheckResponse> responseEntity = restTemplate.postForEntity(
-				"http://localhost:8090/transactionStatus", getStatusCheckRequest(transaction), StatusCheckResponse.class);
+				"http://localhost:8090/transactionStatus", getStatusCheckRequest(transaction),
+				StatusCheckResponse.class);
 		StatusCheckResponse StatusCheckResponse = responseEntity.getBody();
 		return StatusCheckResponse;
 	}
@@ -81,17 +89,26 @@ public class RequestServiceImpl implements RequestService {
 	@Override
 	public boolean sendReversalRequest(Transaction transaction) {
 		LOGGER.info("Calling Reversal API");
-		ResponseEntity<ReversalResponse> responseEntity = restTemplate.postForEntity("http://localhost:8090/reversal",
-				getReversalRequest(transaction), ReversalResponse.class);
-		ReversalResponse reversalResponse = responseEntity.getBody();
-		if (reversalResponse != null) {
-			System.out.println(reversalResponse.getTxnStatus());
-			return reversalResponse.getTxnStatus().equals("200");
+		ResponseEntity<ReversalResponse> responseEntity;
+		boolean result = false;
 
-		} else {
-			LOGGER.info("Reversal API didn't respond");
-			return false;
+		try {
+			responseEntity = restTemplate.postForEntity("http://localhost:8090/reversal",
+					getReversalRequest(transaction), ReversalResponse.class);
+			ReversalResponse reversalResponse = responseEntity.getBody();
+			if (reversalResponse != null) {
+				result = reversalResponse.getTxnStatus().equals("200");
+
+			} else {
+				LOGGER.info("Reversal API didn't respond");
+				result = false;
+			}
+		} catch (Exception e) {
+			System.out.println("Request Timed Out");
 		}
+
+		return result;
+
 	}
 
 	public StatusCheckResponse sendStatusCheckRequestSuccess(Transaction transaction) throws Exception {
@@ -118,12 +135,21 @@ public class RequestServiceImpl implements RequestService {
 		return response.getBody();
 	}
 
-	public ReversalResponse sendReversalRequestFail(Transaction transaction) {
+	public ReversalResponse sendReversalRequestFail(Transaction transaction)
+			throws URISyntaxException, SocketTimeoutException {
 		String urlString = "http://localhost:8090/failedReversal";
-		ResponseEntity<ReversalResponse> response = restTemplate.postForEntity(urlString,
-				getReversalRequest(transaction), ReversalResponse.class);
-		System.out.println(response.getBody());
-		return response.getBody();
+
+		URI uri = new URI(urlString);
+		try {
+			ResponseEntity<ReversalResponse> response;
+			response = restTemplate.getForEntity(uri, ReversalResponse.class);
+			return response.getBody();
+		} catch (Exception e) {
+
+			System.out.println("******************");
+		}
+		return null;
+
 	}
 
 }
