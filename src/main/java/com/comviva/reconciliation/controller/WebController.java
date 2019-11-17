@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class WebController implements ErrorController {
-
+	
 	private static final String PATH="/error";
 	
 	@RequestMapping("/")

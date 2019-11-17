@@ -7,8 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.ResourceAccessException;
-import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import com.comviva.reconciliation.entity.ReversalRequest;
@@ -89,7 +87,7 @@ public class RequestServiceImpl implements RequestService {
 	 * 
 	 */
 	@Override
-	public boolean sendReversalRequest(Transaction transaction) throws SocketTimeoutException {
+	public boolean sendReversalRequest(Transaction transaction) {
 		LOGGER.info("Calling Reversal API");
 		ResponseEntity<ReversalResponse> responseEntity;
 		boolean result = false;
