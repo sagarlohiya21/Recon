@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 public class ReconciliationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReconciliationApplication.class, args);
-		
+		SpringApplication.run(ReconciliationApplication.class);
+
 	}
 }
