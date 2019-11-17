@@ -12,6 +12,10 @@ import org.springframework.stereotype.Component;
 public class UserPrinciple implements UserDetails {
 
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
 	 * serialVersionUID for serializable class UserPrinciple
 	 */
 	//private static final long serialVersionUID = 1L;

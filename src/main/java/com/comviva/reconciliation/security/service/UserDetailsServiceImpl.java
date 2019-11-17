@@ -17,14 +17,14 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
 	@Autowired
 	private UserDao userDao;
-	
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserDetailsServiceImpl.class);
-	
+
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		LOGGER.info("Laoding User by user Name...");
 		User user = userDao.getUserByUserName(username);
-		if(user==null) {
+		if (user == null) {
 			LOGGER.error("User Details with user name : " + username + " not foud");
 			throw new UsernameNotFoundException("username not found");
 		}
