@@ -43,7 +43,6 @@ public class TransactionServiceImpl implements TransactionService {
 			transactionDao.updateTransaction(transaction);
 		} catch (Exception e) {
 			LOGGER.error("Failed to update the Transaction");
-			e.printStackTrace();
 		}
 
 	}
@@ -60,7 +59,6 @@ public class TransactionServiceImpl implements TransactionService {
 			transactionDao.updateTransaction(transaction);
 		} catch (Exception e) {
 			LOGGER.error("Failed to update the Transaction ");
-			e.printStackTrace();
 		}
 	}
 
@@ -76,7 +74,6 @@ public class TransactionServiceImpl implements TransactionService {
 			transactionDao.updateTransaction(transaction);
 		} catch (Exception e) {
 			LOGGER.error("Failed to update the Transaction Status");
-			e.printStackTrace();
 		}
 	}
 
@@ -129,7 +126,6 @@ public class TransactionServiceImpl implements TransactionService {
 			}
 		} catch (Exception e) {
 			LOGGER.error(" Error occured while processing failed transactions ");
-			e.printStackTrace();
 		}
 	}
 
