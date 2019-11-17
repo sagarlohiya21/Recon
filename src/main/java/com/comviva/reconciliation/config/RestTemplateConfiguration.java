@@ -11,8 +11,8 @@ public class RestTemplateConfiguration {
 	@Bean
 	public RestTemplate getRestTemplate() {
 		HttpComponentsClientHttpRequestFactory factory = new HttpComponentsClientHttpRequestFactory();
-		factory.setReadTimeout(20000);
-		factory.setConnectTimeout(20000);
+		factory.setReadTimeout(2000);
+		factory.setConnectTimeout(2000);
 		return new RestTemplate(factory);
 	}
 

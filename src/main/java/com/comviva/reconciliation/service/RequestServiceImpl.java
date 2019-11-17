@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.ResourceAccessException;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import com.comviva.reconciliation.entity.ReversalRequest;
@@ -88,21 +89,21 @@ public class RequestServiceImpl implements RequestService {
 	 * 
 	 */
 	@Override
-	public boolean sendReversalRequest(Transaction transaction) throws SocketTimeoutException, InterruptedException {
+	public boolean sendReversalRequest(Transaction transaction) throws SocketTimeoutException {
 		LOGGER.info("Calling Reversal API");
 		ResponseEntity<ReversalResponse> responseEntity;
 		boolean result = false;
 
-		responseEntity = restTemplate.postForEntity("http://localhost:8090/reversal", getReversalRequest(transaction),
-				ReversalResponse.class);
-		ReversalResponse reversalResponse = responseEntity.getBody();
-		if (reversalResponse != null) {
-			if (reversalResponse.getTxnStatus().equals("500")) {
-				Thread.sleep(2000);
-				result = false;
-			} else if (reversalResponse.getTxnStatus().equals("200")) {
-				result = true;
+		try {
+			responseEntity = restTemplate.postForEntity("http://localhost:8090/reversal",
+					getReversalRequest(transaction), ReversalResponse.class);
+			ReversalResponse reversalResponse = responseEntity.getBody();
+			if (reversalResponse != null) {
+				result = reversalResponse.getTxnStatus().equals("200");
 			}
+
+		} catch (Exception e) {
+			LOGGER.error("Reversal api did not responsd");
 		}
 
 		return result;
