@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.comviva.reconciliation.entity.Transaction;
 import com.comviva.reconciliation.service.TransactionService;
-import com.comviva.reconciliation.service.TransactionServiceImpl;
 
 @RestController
 public class TransactionController {
@@ -28,7 +27,6 @@ public class TransactionController {
 	public void testWorking() throws Exception {
 		List<Transaction> list = ts.getFailedTransactions();
 		System.out.println(list.size());
-		((TransactionServiceImpl) ts).testTimeout(list.get(0));
 	}
 
 }

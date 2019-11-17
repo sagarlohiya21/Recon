@@ -1,7 +1,5 @@
 package com.comviva.reconciliation.service;
 
-import java.net.SocketTimeoutException;
-import java.net.URISyntaxException;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -135,16 +133,4 @@ public class TransactionServiceImpl implements TransactionService {
 		}
 	}
 
-	/**
-	 * Test method for the request timeouts
-	 * 
-	 * @throws URISyntaxException
-	 */
-	public void testTimeout(Transaction t) throws URISyntaxException {
-		try {
-			((RequestServiceImpl) requestService).sendReversalRequestFail(t);
-		} catch (SocketTimeoutException e) {
-			System.out.println("DFHDSHFSDJDSL");
-		}
-	}
 }
