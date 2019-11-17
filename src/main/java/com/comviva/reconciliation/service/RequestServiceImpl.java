@@ -20,6 +20,8 @@ public class RequestServiceImpl implements RequestService {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionServiceImpl.class);
 
+	String value = "dummy";
+
 	@Autowired
 	RestTemplate restTemplate;
 
@@ -37,8 +39,9 @@ public class RequestServiceImpl implements RequestService {
 	private StatusCheckRequest getStatusCheckRequest(Transaction transaction) {
 		LOGGER.info("Constructing statusCheck request for transaction :"
 				+ transaction.getPrimaryTransaction().getTransactionId());
-		return new StatusCheckRequest("dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy",
-				"dummy", "dummy", "dummy");
+
+		return new StatusCheckRequest(value, value, value, value, value, value, value, value, value, value, value,
+				value);
 	}
 
 	/**
@@ -51,8 +54,8 @@ public class RequestServiceImpl implements RequestService {
 	private ReversalRequest getReversalRequest(Transaction transaction) {
 		LOGGER.info("Constructing Reversal request for transaction :"
 				+ transaction.getPrimaryTransaction().getTransactionId());
-		return new ReversalRequest("dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy", "dummy",
-				"dummy", "dummy", "dummy", "dummy");
+		return new ReversalRequest(value, value, value, value, value, value, value, value, value, value, value, value,
+				value);
 	}
 
 	/**
@@ -70,8 +73,7 @@ public class RequestServiceImpl implements RequestService {
 		ResponseEntity<StatusCheckResponse> responseEntity = restTemplate.postForEntity(
 				"http://localhost:8090/transactionStatus", getStatusCheckRequest(transaction),
 				StatusCheckResponse.class);
-		StatusCheckResponse StatusCheckResponse = responseEntity.getBody();
-		return StatusCheckResponse;
+		return responseEntity.getBody();
 	}
 
 	/**
@@ -83,7 +85,7 @@ public class RequestServiceImpl implements RequestService {
 	 * 
 	 */
 	@Override
-	public boolean sendReversalRequest(Transaction transaction) throws SocketTimeoutException{
+	public boolean sendReversalRequest(Transaction transaction) throws SocketTimeoutException {
 		LOGGER.info("Calling Reversal API");
 		ResponseEntity<ReversalResponse> responseEntity;
 		boolean result = false;
@@ -97,10 +99,9 @@ public class RequestServiceImpl implements RequestService {
 
 			} else {
 				LOGGER.info("Reversal API didn't respond");
-				result = false;
 			}
 		} catch (Exception e) {
-			System.out.println("Request Timed Out");
+			LOGGER.info("Request Timed Out");
 		}
 
 		return result;

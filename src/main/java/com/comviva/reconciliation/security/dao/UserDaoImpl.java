@@ -17,26 +17,17 @@ public class UserDaoImpl implements UserDao {
 
 	@PersistenceContext
 	private EntityManager entityManager;
-	
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserDaoImpl.class);
-	
+
 	@Override
-	public User getUserByUserName(String username) {
-		LOGGER.info("Fetching User Details By User Name : "+ username);
+	public User getUserByUserName(String username) throws NoResultException, NonUniqueResultException {
+		LOGGER.info("Fetching User Details By User Name : " + username);
 		Query query = entityManager.createQuery("from User where username=:username");
 		query.setParameter("username", username);
-		try{
-			return (User)query.getSingleResult();
-		}
-	  catch (NoResultException nre) {
-		 // Code for handling NoResultException
-		  return null;
-		 } catch (NonUniqueResultException nure) {
-		 // Code for handling NonUniqueResultException
-			 return null;
-		}
-		
-		catch(Exception e) {
+		try {
+			return (User) query.getSingleResult();
+		} catch (Exception e) {
 			LOGGER.debug("User with user name: " + username + " not fond in the Data Base");
 			return null;
 		}

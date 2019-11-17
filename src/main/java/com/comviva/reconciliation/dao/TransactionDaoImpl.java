@@ -34,9 +34,13 @@ public class TransactionDaoImpl implements TransactionDao {
 
 	@Override
 	@Transactional
-	public void updateTransaction(Transaction transaction) throws Exception {
-		entityManager.merge(transaction);
-		LOGGER.info("Transaction with transaction ID updates");
+	public void updateTransaction(Transaction transaction) {
+		try {
+			entityManager.merge(transaction);
+			LOGGER.info("Transaction with transaction ID updates");
+		} catch (Exception e) {
+			LOGGER.info("The changes in the transaction could not be saved");
+		}
 	}
 
 }

@@ -19,14 +19,13 @@ public class TransactionController {
 
 	@CrossOrigin
 	@RequestMapping(method = RequestMethod.GET, value = "/getAllFailedTransactions")
-	public List<Transaction> getTransaction() throws Exception {
+	public List<Transaction> getTransaction() {
 		return ts.getFailedTransactions();
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/test")
-	public void testWorking() throws Exception {
+	public void testWorking() {
 		List<Transaction> list = ts.getFailedTransactions();
-		System.out.println(list.size());
 	}
 
 }

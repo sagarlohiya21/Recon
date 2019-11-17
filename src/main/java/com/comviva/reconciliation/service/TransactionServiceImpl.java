@@ -89,7 +89,6 @@ public class TransactionServiceImpl implements TransactionService {
 			// iterating through all the transactions
 			for (Transaction failedTransaction : failedTransactions) {
 				LOGGER.info("processing failed transaction :");
-//						+ failedTransaction.getPrimaryTransaction().getTransactionId());
 				if (requestService.sendStatusCheckRequest(failedTransaction).getTxnStatus().equals("200")) { // calling
 																												// status
 																												// check
@@ -99,7 +98,6 @@ public class TransactionServiceImpl implements TransactionService {
 																												// failed
 																												// transaction
 					LOGGER.info("Money is debited for transaction :");
-//							+ failedTransaction.getPrimaryTransaction().getTransactionId());
 					int attempts = 0;
 					boolean flag;
 					do {
@@ -114,13 +112,12 @@ public class TransactionServiceImpl implements TransactionService {
 						}
 					} while (attempts < 7);
 					if (!flag) {
-						System.out.println("maximum reached");
+						LOGGER.info("Maximum value of retrial count is reached");
 						updateTransaction(failedTransaction, "" + attempts + "", 21);
 
 					}
 				} else {
 					LOGGER.info("Money is not debited for transaction :");
-//							+ failedTransaction.getPrimaryTransaction().getTransactionId());
 					updateTransactionStatus(failedTransaction);
 				}
 			}

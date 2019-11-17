@@ -13,5 +13,5 @@ public interface TransactionDao {
 
 	List<Transaction> getFailedTransactions();
 
-	void updateTransaction(Transaction transaction) throws Exception;
+	void updateTransaction(Transaction transaction);
 }
