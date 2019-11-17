@@ -36,8 +36,12 @@ public class TransactionDaoImpl implements TransactionDao {
 	@Transactional
 	public void updateTransaction(Transaction transaction) {
 		try {
-			entityManager.merge(transaction);
-			LOGGER.info("Transaction with transaction ID updates");
+			if(entityManager.find(Transaction.class, transaction.getPrimaryTransaction()) != null) {
+				entityManager.merge(transaction);
+				LOGGER.info("Transaction with transaction ID updated");
+			}
+			else
+				LOGGER.error("transaction not found in the database");
 		} catch (Exception e) {
 			LOGGER.info("The changes in the transaction could not be saved");
 		}

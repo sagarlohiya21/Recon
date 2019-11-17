@@ -23,7 +23,7 @@ public class TransactionPrimary implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private LocalDate TransactionDate;
-	private String RetailerMsisdn;
-	private String TransactionId;
+	private LocalDate transactionDate;
+	private String retailerMsisdn;
+	private String transactionId;
 }

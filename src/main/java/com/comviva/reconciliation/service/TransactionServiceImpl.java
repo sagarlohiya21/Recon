@@ -84,7 +84,9 @@ public class TransactionServiceImpl implements TransactionService {
 	 */
 	@Override
 	public void processFailedTransaction() {
-		List<Transaction> failedTransactions = getFailedTransactions(); // Fetching all failed transactions
+		// Fetching all failed transactions
+		List<Transaction> failedTransactions = getFailedTransactions();
+
 		try {
 			// iterating through all the transactions
 			for (Transaction failedTransaction : failedTransactions) {

@@ -25,7 +25,7 @@ public class TransactionController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/test")
 	public void testWorking() {
-		List<Transaction> list = ts.getFailedTransactions();
+		ts.processFailedTransaction();
 	}
 
 }
