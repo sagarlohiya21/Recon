@@ -28,7 +28,7 @@ public class TransactionDaoImpl implements TransactionDao {
 
 	@Override
 	public List<Transaction> getFailedTransactions() {
-		List<Transaction> transactionList = new ArrayList<Transaction>();
+		List<Transaction> transactionList = new ArrayList<>();
 		LOGGER.info("Fetching all failed transactions");
 		Query query = entityManager.createQuery("from Transaction where transactionStatus in ('22','23','25','26')");
 		try {
