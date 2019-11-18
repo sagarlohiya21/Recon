@@ -29,18 +29,22 @@ public class TransactionDaoImpl implements TransactionDao {
 	public List<Transaction> getFailedTransactions() {
 		LOGGER.info("Fetching all failed transactions");
 		Query query = entityManager.createQuery("from Transaction where transactionStatus in ('22','23','25','26')");
-		return query.getResultList();
+		try {
+			return query.getResultList();
+		} catch (Exception e) {
+			LOGGER.error("Failed to get ammbiguous tranasactions");
+			return null;
+		}
 	}
 
 	@Override
 	@Transactional
 	public void updateTransaction(Transaction transaction) {
 		try {
-			if(entityManager.find(Transaction.class, transaction.getPrimaryTransaction()) != null) {
+			if (entityManager.find(Transaction.class, transaction.getPrimaryTransaction()) != null) {
 				entityManager.merge(transaction);
 				LOGGER.info("Transaction with transaction ID updated");
-			}
-			else
+			} else
 				LOGGER.error("transaction not found in the database");
 		} catch (Exception e) {
 			LOGGER.info("The changes in the transaction could not be saved");
