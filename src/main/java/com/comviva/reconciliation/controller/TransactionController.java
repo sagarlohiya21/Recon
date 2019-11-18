@@ -23,8 +23,8 @@ public class TransactionController {
 		return ts.getFailedTransactions();
 	}
 
-	@RequestMapping(method = RequestMethod.GET, value = "/test")
-	public void testWorking() {
+	@RequestMapping(method = RequestMethod.GET, value = "/reconcile")
+	public void reconcileTransactions() {
 		ts.processFailedTransaction();
 	}
 
