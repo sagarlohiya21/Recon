@@ -5,7 +5,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ RequestServiceUnitTesting.class, TransactionDaoTest.class, TransactonServiceUnitTest.class })
+@SuiteClasses({ RequestServiceUnitTesting.class, TransactionDaoTest.class, TransactonServiceUnitTest.class ,UserServiceTest.class })
 public class ReconciliationApplicationTests {
 
 }
