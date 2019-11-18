@@ -7,8 +7,10 @@ import javax.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import com.comviva.reconciliation.constants.Constants;
 import com.comviva.reconciliation.dao.TransactionDao;
 import com.comviva.reconciliation.entity.Transaction;
 
@@ -19,6 +21,8 @@ import com.comviva.reconciliation.entity.Transaction;
 @Service
 public class TransactionServiceImpl implements TransactionService {
 
+	@Value("${maximum.reversal.retries}")
+	private int maxRetries;
 	@Autowired
 	private TransactionDao transactionDao;
 
@@ -56,9 +60,9 @@ public class TransactionServiceImpl implements TransactionService {
 	@Transactional
 	private void updateTransaction(Transaction transaction, String faceValue) {
 		if (transaction.getTransactionStatus() == 22 || transaction.getTransactionStatus() == 23)
-			transaction.setTransactionStatus(29);
+			transaction.setTransactionStatus(Constants.SUCCESSFUL_TRANSACTION_STATUS_1);
 		else if (transaction.getTransactionStatus() == 25 || transaction.getTransactionStatus() == 26)
-			transaction.setTransactionStatus(30);
+			transaction.setTransactionStatus(Constants.SUCCESSFUL_TRANSACTION_STATUS_2);
 		transaction.setFaceValue(faceValue);
 		LOGGER.info("Updating transaction status and faceValue");
 		try {
@@ -72,9 +76,9 @@ public class TransactionServiceImpl implements TransactionService {
 	@Transactional
 	public void updateTransactionStatus(Transaction transaction) {
 		if (transaction.getTransactionStatus() == 22 || transaction.getTransactionStatus() == 23)
-			transaction.setTransactionStatus(29);
+			transaction.setTransactionStatus(Constants.SUCCESSFUL_TRANSACTION_STATUS_1);
 		else if (transaction.getTransactionStatus() == 25 || transaction.getTransactionStatus() == 26)
-			transaction.setTransactionStatus(30);
+			transaction.setTransactionStatus(Constants.SUCCESSFUL_TRANSACTION_STATUS_2);
 		LOGGER.info("Updating transaction Status ");
 		try {
 			transactionDao.updateTransaction(transaction);
@@ -118,10 +122,10 @@ public class TransactionServiceImpl implements TransactionService {
 							updateTransaction(failedTransaction, "" + attempts + "");
 							break;
 						}
-					} while (attempts < 7);
+					} while (attempts < maxRetries);
 					if (!flag) {
 						LOGGER.info("Maximum value of retrial count is reached");
-						updateTransaction(failedTransaction, "" + attempts + "", 21);
+						updateTransaction(failedTransaction, "" + attempts + "", Constants.REVERSAL_FAILED_TRASANCTION_STATUS);
 
 					}
 				} else {

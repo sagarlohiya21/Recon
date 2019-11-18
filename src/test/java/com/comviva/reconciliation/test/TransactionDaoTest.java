@@ -13,6 +13,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import javax.persistence.QueryTimeoutException;
 import javax.transaction.Transactional;
 
 import org.junit.Before;
@@ -201,4 +202,30 @@ public class TransactionDaoTest {
 		verify(entityManagerMock, never()).merge(transaction);
 
        	}
+	
+	@Test
+	@Transactional
+	@Rollback(true)
+	public void getFailedTransactions_Handling_Exception(){
+		Mockito.when(entityManagerMock.createQuery("from Transaction where transactionStatus in ('22','23','25','26')")).thenReturn(query);
+		Mockito.when(query.getResultList()).thenThrow(QueryTimeoutException.class);
+		// when
+        List<Transaction> actualTransactions = transactionDao.getFailedTransactions();
+        // Verifying method calls of entity Manager and query class 
+        verify(entityManagerMock, times(1)).createQuery(ArgumentMatchers.anyString());
+        verify(query,times(1)).getResultList();
+       	}
+	
+	@Test
+	@Transactional
+	@Rollback(true)
+	public void updateTransaction_MergeThrows_Exception(){
+		Mockito.when(entityManagerMock.find(Transaction.class, transaction.getPrimaryTransaction())).thenReturn(transaction);
+		Mockito.when(entityManagerMock.merge(transaction)).thenThrow(IllegalArgumentException.class);
+		transactionDao.updateTransaction(transaction);
+		verify(entityManagerMock, times(1)).find(Transaction.class, transaction.getPrimaryTransaction());
+		verify(entityManagerMock, times(1)).merge(transaction);
+
+       	}
+
 }

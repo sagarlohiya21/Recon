@@ -1,13 +1,11 @@
 package com.comviva.reconciliation.test;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
 
-@SpringBootTest
-class ReconciliationApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
+@RunWith(Suite.class)
+@SuiteClasses({ RequestServiceUnitTesting.class, TransactionDaoTest.class, TransactonServiceUnitTest.class })
+public class ReconciliationApplicationTests {
 
 }
