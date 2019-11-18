@@ -28,13 +28,12 @@ public class TransactionServiceImpl implements TransactionService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionServiceImpl.class);
 
 	@Override
-	public List<Transaction> getFailedTransactions() throws NullPointerException{
+	public List<Transaction> getFailedTransactions() {
 		LOGGER.info("Fetching all failed transactions");
 		List<Transaction> transactions = transactionDao.getFailedTransactions();
-		if(transactions != null) {
+		if (transactions != null) {
 			return transactions;
-		}
-		else {
+		} else {
 			LOGGER.debug("No ambiguous transactions found in the Database");
 			throw new NullPointerException("No ambiguous transactions in the Database");
 		}

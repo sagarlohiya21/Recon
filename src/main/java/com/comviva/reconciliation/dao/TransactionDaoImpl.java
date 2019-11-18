@@ -1,5 +1,6 @@
 package com.comviva.reconciliation.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -27,14 +28,15 @@ public class TransactionDaoImpl implements TransactionDao {
 
 	@Override
 	public List<Transaction> getFailedTransactions() {
+		List<Transaction> transactionList = new ArrayList<Transaction>();
 		LOGGER.info("Fetching all failed transactions");
 		Query query = entityManager.createQuery("from Transaction where transactionStatus in ('22','23','25','26')");
 		try {
-			return query.getResultList();
+			transactionList = query.getResultList();
 		} catch (Exception e) {
 			LOGGER.error("Failed to get ammbiguous tranasactions");
-			return null;
 		}
+		return transactionList;
 	}
 
 	@Override
@@ -44,8 +46,10 @@ public class TransactionDaoImpl implements TransactionDao {
 			if (entityManager.find(Transaction.class, transaction.getPrimaryTransaction()) != null) {
 				entityManager.merge(transaction);
 				LOGGER.info("Transaction with transaction ID updated");
-			} else
+			} else {
 				LOGGER.error("transaction not found in the database");
+			}
+
 		} catch (Exception e) {
 			LOGGER.info("The changes in the transaction could not be saved");
 		}
